@@ -1,27 +1,61 @@
 <div id="fh5co-header">
-  <div id="header">
-    <header id="fh5co-header-section">
-      <div class="container">
-        <div class="nav-header">
-          <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-          <h1 id="fh5co-logo" align="left"><a href="/index.html"><strong><font color="white">Crypto Done Right!</font></strong><br><h5 id="header-subheader">A Cryptographic Knowledge Base</h5></a></h1>
-          <!-- START #fh5co-menu-wrap -->
-          <nav id="fh5co-menu-wrap" role="navigation">
-            <ul class="sf-menu" id="fh5co-primary-menu">
-              <li><a href="#"><font color="white">Topics</font></a>
-              <ul class="fh5co-sub-menu">
-                    <li><a href="/view_all.html">View All</a></li>
-                    <li><a href="/quickstarts/dev.html">Developer Quickstarts</a></li>
-                    <li><a href="/quickstarts/it.html">IT Quickstarts</a></li>
-                    <li><a href="/quickstarts/manager.html">Manager Quickstarts</a></li>
-              </ul>
-                </li>
-              <li><a href="/about.html"><font color="white">About</font></a></li>
-              <li><a href="/contact.html"><font color="white">Contact</font></a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-  </div>
-  </div>
+    <div id="header">
+        <header id="fh5co-header-section">
+            <div class="container">
+                <div class="nav-header">
+                    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"
+                        ><i></i
+                    ></a>
+                    <h1 id="fh5co-logo" align="left">
+                        <a href="/index.html"
+                            ><strong
+                                ><font color="white"
+                                    >{{site.data.header.header}}</font
+                                ></strong
+                            ><br />
+                            <h5 id="header-subheader">
+                                {{site.data.header.subheader}}
+                            </h5></a
+                        >
+                    </h1>
+                    <!-- START #fh5co-menu-wrap -->
+                    <nav id="fh5co-menu-wrap" role="navigation">
+                        <ul class="sf-menu" id="fh5co-primary-menu">
+                            <li>
+                                <a href="#"
+                                    ><font color="white"
+                                        >{{site.data.header.topics.title}}</font
+                                    ></a
+                                >
+                                <ul class="fh5co-sub-menu">
+                                    {% for item in site.data.header.topics.items
+                                    %}
+                                    <li>
+                                        <a href="{{item.item.url}}"
+                                            >{{item.item.title}}</a
+                                        >
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="{{site.data.header.about.url}}"
+                                    ><font color="white"
+                                        >{{site.data.header.about.title}}</font
+                                    ></a
+                                >
+                            </li>
+                            <li>
+                                <a href="{{site.data.header.contact.url}}"
+                                    ><font color="white"
+                                        >{{site.data.header.contact.title}}</font
+                                    ></a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+</div>
