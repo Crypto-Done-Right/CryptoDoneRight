@@ -1,7 +1,63 @@
 markdown: kramdown
 highlighter: rouge
 kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-baseurl: 
-exclude: ['README.md']
+    input: GFM
+    syntax_highlighter: rouge
+baseurl:
+exclude: ["README.md"]
+## Strings for "global" pages
+
+feedback-form: https://docs.google.com/forms/d/e/1FAIpQLSenaO1MbJ5sgjKF5KYp-AwMbLEsiuEEioqOUnI1dqvievTAKw/viewform
+
+home:
+    title: Crypto Done Right!
+    hero:
+        l1: Unlock the power of cryptography
+        l2: Select your role to get started
+    quickstarts:
+        - item:
+              title: Developer
+              icon: icon-code
+              action: Check out developer quickstarts
+              link: quickstarts/dev.html
+        - item:
+              title: IT Administrator
+              icon: icon-wrench
+              action: Check out IT quickstarts
+              link: quickstarts/it.html
+        - item:
+              title: Manager
+              icon: icon-user
+              action: Check out manager quickstarts
+              link: quickstarts/manager.html
+    search:
+        l1: Looking for something particular?
+        l2: Search our cryptography knowledgebase
+        search-link: https://google.com/search?q=site%3Acryptodoneright.org
+    share:
+        l1: Share and contribute your expertise on Crypto Done Right
+        items:
+            - item:
+                  img: static_files/getting_started_icon.png
+                  url: https://github.com/jhu-information-security-institute/CryptoDoneRight/blob/master/CONTRIBUTING-template.md
+                  alt: getting started
+            - item:
+                  img: static_files/tips_and_tutorials_icon.png
+                  url: /userguide.html
+                  alt: tips and tutorials
+            - item:
+                  img: static_files/feedback.png
+                  url: https://docs.google.com/forms/d/e/1FAIpQLSenaO1MbJ5sgjKF5KYp-AwMbLEsiuEEioqOUnI1dqvievTAKw/viewform
+                  alt: feedback
+
+contact:
+    header: <strong>Contact</strong> Us
+    l1: We'd <b>love</b> to hear from you
+    l2: We are always looking to make this a better knowledge-base. <br> If you have feedback for us, please take time to fill <a href="https://goo.gl/forms/LUx1LEGz4kxjF4ES2">this form.</a>  <br> <br> <b>Want to reach out? </b>Use the form below.
+
+about:
+    header: <strong>About</strong> Us
+    people-header: People
+    graphic-url: /static_files/mission-vision-values-graphic.png
+
+footer: Copyright © 2017 - 2020 Crypto Done Right All Rights Reserved

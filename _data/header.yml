@@ -1,0 +1,20 @@
+header: Crypto Done Right!
+subheader: A Cryptographic Knowledge Base
+topics:
+    title: Topics
+    items:
+        - item:
+              title: View All
+              url: /view_all.html
+        - item:
+              title: Developer Quickstarts
+              url: /quickstarts/dev.html
+        - item:
+              title: Manager Quickstarts
+              url: /quickstarts/manager.html
+about:
+    title: About
+    url: /about.html
+contact:
+    title: Contact
+    url: /contact.html

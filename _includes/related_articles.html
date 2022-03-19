@@ -1,18 +1,16 @@
 <div id="relatedArticles" class="col-md-6 col-sm-6 col-xs-6">
-  {% if page.related-articles %}
-  <h3>Related Articles</h3>
-  <ul>
-    {% for item in page.related-articles %}
-      <li>
-        {% if item.link != "" %}
-          <a href = "{{item.link}}">
-        {% endif %}
-          {{item.name}}
-        {% if item.link != "" %}
-          </a>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-  {% endif %}
+    {% if page.related-articles %}
+    <h3>Related Articles</h3>
+    <ul>
+        {% for item in page.related-articles %}
+        <li>
+            {% if item.link != "" %}
+            <a href="{{item.link}}">
+                {% endif %} {{item.name}} {% if item.link != "" %}
+            </a>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
 </div>

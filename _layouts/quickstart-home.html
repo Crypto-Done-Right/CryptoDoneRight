@@ -1,48 +1,84 @@
 ---
 layout: default
 ---
-{% include path.html %}
 
-{% include alerts.html %}
+{% include path.html %} {% include alerts.html %}
 
 <div class="container-fluid cdr-page-container">
-  <div class="row" style="padding: 2vw;">
-      <div class="col-md-12 col-sm-12 col-xs-12 flex">
-        <div class="col-md-4 col-xs-12 quickstarts-col flex-1">
-          <h3>Here are some topics {{ page.person }}s frequently search for:</h3>
-          <h5>(Note: some of these links are still under construction. Thanks for your patience!)</h5>
-          <ul>
-            {% for faq in page.faqs %}
-            <li><a href="{{ faq.link }}">{{ faq.blurb }}</a></li>
-            {% endfor %}
-          </ul>
-          <p>Can't find what you're looking for? Check the topic pages, or <a href="https://github.com/jhu-information-security-institute/CryptoDoneRight/issues/new?template=issue_template.md">let us know!</a></p>
-        </div>
-        <div class="col-md-4 col-xs-12 quickstarts-col flex-1">
-          <h3>Need a quickstart for a certain topic?</h3>
-          <h5>(Note: the topic homepages can be found under Topics > View All)</h5>
-          <div class="col-md-12">
-            {% for b in site.pages %}
-            <div class="item">
-              {% if b.layout == "quickstart" and b.qtype == page.qtype and b.type %}
-                <li><font size="4"><strong><a href="{{b.url}}">{{b.type}}</a></strong></font></li>
-              {% endif %}
+    <div class="row" style="padding: 2vw">
+        <div class="col-md-12 col-sm-12 col-xs-12 flex">
+            <div class="col-md-4 col-xs-12 quickstarts-col flex-1">
+                <h3>
+                    Here are some topics {{ page.person }}s frequently search
+                    for:
+                </h3>
+                <h5>
+                    (Note: some of these links are still under construction.
+                    Thanks for your patience!)
+                </h5>
+                <ul>
+                    {% for faq in page.faqs %}
+                    <li><a href="{{ faq.link }}">{{ faq.blurb }}</a></li>
+                    {% endfor %}
+                </ul>
+                <p>
+                    Can't find what you're looking for? Check the topic pages,
+                    or
+                    <a
+                        href="https://github.com/jhu-information-security-institute/CryptoDoneRight/issues/new?template=issue_template.md"
+                        >let us know!</a
+                    >
+                </p>
             </div>
-            {% endfor %}
-          </div>
+            <div class="col-md-4 col-xs-12 quickstarts-col flex-1">
+                <h3>Need a quickstart for a certain topic?</h3>
+                <h5>
+                    (Note: the topic homepages can be found under Topics > View
+                    All)
+                </h5>
+                <div class="col-md-12">
+                    {% for b in site.pages %}
+                    <div class="item">
+                        {% if b.layout == "quickstart" and b.qtype == page.qtype
+                        and b.type %}
+                        <li>
+                            <font size="4"
+                                ><strong
+                                    ><a href="{{b.url}}">{{b.type}}</a></strong
+                                ></font
+                            >
+                        </li>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12 quickstarts-col flex-1">
+                <h3>Are you an expert in the {{ page.person }} space?</h3>
+                <ol>
+                    <li>
+                        Check out our
+                        <a
+                            href="/articles/cryptographic_protocols/content-creation.html"
+                            >content creation guide</a
+                        >, and
+                    </li>
+                    <li>
+                        Open a pull request with your contribution
+                        <a
+                            href="https://github.com/jhu-information-security-institute/CryptoDoneRight/issues/new?template=pull_request_template.md"
+                            >here</a
+                        >
+                    </li>
+                </ol>
+            </div>
         </div>
-        <div class="col-md-4 col-xs-12 quickstarts-col flex-1">
-          <h3>Are you an expert in the {{ page.person }} space?</h3>
-          <ol>
-            <li>Check out our <a href="/articles/cryptographic_protocols/content-creation.html">content creation guide</a>, and</li>
-            <li>Open a pull request with your contribution <a href="https://github.com/jhu-information-security-institute/CryptoDoneRight/issues/new?template=pull_request_template.md">here</a></li>
-          </ol>
-        </div>
-      </div>
-	 </div>
+    </div>
 </div>
 
-<div class="row" style="margin-top:5vw;border-top:1px solid #4f4f4f;">
-      {% include further_reading.html %}
-      {% include related_articles.html %}
+<div
+    class="row"
+    style="margin-top: 5vw; border-top: 1px solid #4f4f4f; margin-bottom: 150px"
+>
+    {% include further_reading.html %} {% include related_articles.html %}
 </div>

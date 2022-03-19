@@ -1,0 +1,32 @@
+other-contributors:
+    header: Other CryptoDoneRight Contributors
+    people:
+        - name: David McGrew
+        - name: Matthew Green
+        - name: RedSeal Inc.
+grad-contributors:
+    header: Graduate student contributors
+    people:
+        - name: Prashanth Venkateswaran
+        - name: Venkata Aditya
+        - name: Jennifer Li
+        - name: Muskaan Kalra
+        - name: Rishabh Singh
+        - name: Apoorv Dayal
+        - name: Naman Tiwari
+        - name: Hyoeun Choi
+undergrad-contributors:
+    header: Undergraduate student contributors
+    people:
+        - name: Spencer Loggia
+        - name: Matthew Green
+        - name: RedSeal Inc.
+
+closing-text:
+    l1: If you are interested in submitting content, please <a href="/contact">Contact Us</a>.
+    l2: All information submitted will be reviewed prior to be being
+        posted on the web site. Here is
+        <a
+        href="articles/cryptographic_protocols/content-creation.html"
+        >a document we wrote to get you started</a
+        >.

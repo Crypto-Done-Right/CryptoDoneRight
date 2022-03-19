@@ -1,34 +1,46 @@
-<div class="row">
-  <div class="col-md-8 col-md-offset-2 animate-box">
-    <h3>Other CryptoDoneRight Contributors:</h3>
-    <ul>
-      <li>David McGrew</li>
-      <li>Matthew Green</li>
-      <li>RedSeal Inc.</li>
-    </ul>
-  </div>
-</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 animate-box">
+            <h4>{{site.data.contributors.other-contributors.header}}:</h4>
+            <ul>
+                {% for person in
+                site.data.contributors.other-contributors.people %}
+                <li>{{person.name}}</li>
 
-<div class="row">
-  <div class="col-md-8 col-md-offset-2 animate-box">
-    <div align="justify">
-    <h4>Graduate student contributors:</h4>
-    <ul>
-      <li>Prashanth Venkateswaran</li>
-      <li>Venkata Aditya</li>
-      <li>Jennifer Li</li>
-      <li>Muskaan Kalra </li>
-      <li>Rishabh Singh</li>
-      <li>Apoorv Dayal</li>
-      <li>Naman Tiwari</li>
-      <li>Hyoeun Choi</li>
-    </ul>
-    <h4>Undergraduate student contributors:</h4>
-    <ul>
-      <li>Spencer Loggia</li>
-    </ul>
-    <br/>
-    <h3>If you are interested in submitting content, please send us an email. All information submitted will be reviewed prior to be being posted on the web site. Here is <a href="articles/cryptographic_protocols/content-creation.html">a document we wrote to get you started</a>.</h3><br/><br/><br/><br/>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
-  </div>
+
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 animate-box">
+            <div align="justify">
+                <h4>{{site.data.contributors.grad-contributors.header}}:</h4>
+                <ul>
+                    {% for person in
+                    site.data.contributors.grad-contributors.people %}
+                    <li>{{person.name}}</li>
+
+                    {% endfor %}
+                </ul>
+                <h4>
+                    {{site.data.contributors.undergrad-contributors.header}}:
+                </h4>
+                <ul>
+                    {% for person in
+                    site.data.contributors.undergrad-contributors.people %}
+                    <li>{{person.name}}</li>
+
+                    {% endfor %}
+                </ul>
+                <br />
+                <h3>
+                    {{site.data.contributors.closing-text.l1}}<br />
+                    <br />
+                    {{site.data.contributors.closing-text.l2}}
+                </h3>
+                <br /><br /><br /><br />
+            </div>
+        </div>
+    </div>
 </div>

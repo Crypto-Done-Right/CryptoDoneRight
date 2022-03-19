@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="/css/syntax_highlighter/monokai.css" rel="stylesheet">
-    {% include head.html %}
-  </head>
-  <body background>
-    {% include header.html %}
-    {{ content }}
-    <br /><br /><br /><br />
-    {% include footer.html %}
-    {% include scripts.html %}
-  </body>
+    <head>
+        <link href="/css/syntax_highlighter/monokai.css" rel="stylesheet" />
+        {% include head.html %}
+    </head>
+    <body>
+        <div id="fhc50-wrapper">
+            <div id="fh5co-page">
+                {% include header.html %} {{ content }}
+                <br /><br /><br /><br />
+                {% include scripts.html %}
+            </div>
+        </div>
+        {% include footer.html %}
+    </body>
 </html>

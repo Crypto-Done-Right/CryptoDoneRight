@@ -1,16 +1,19 @@
 <div class="breadcrumbs cdr-title-bc">
-  <div class="container">
-    <div id="contentScroller">
-      <div id="devtitle">
-        <strong style="font-size:3rem;">{{page.title}}</strong>
-      </div>
+    <div class="container">
+        <div class="dev3lop-article-header">
+            <h3>{{page.title}}</h3>
+
+            <div class="crumb">
+                <li class="breadcrumb-item level">
+                    <a href="/index.html">Home</a>
+                </li>
+                {% if {{page.upper-link}} %}
+                <li class="breadcrumb-item level">
+                    > <a href="{{page.upper-link}}">{{page.type}}</a>
+                </li>
+                {% endif %}
+                <li class="breadcrumb-item level">> {{page.title}}</li>
+            </div>
+        </div>
     </div>
-    <ol class="breadcrumb cdr-breadcrumb">
-      <li class="breadcrumb-item level"><a href="/index.html">Home</a></li>
-      {% if {{page.upper-link}} %}
-        <li class="breadcrumb-item level"><a href="{{page.upper-link}}">{{page.type}}</a></li>
-      {% endif %}
-      <li class="breadcrumb-item level">{{page.title}}</li>
-    </ol>
-   </div>
 </div>

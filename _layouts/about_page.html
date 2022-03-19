@@ -1,46 +1,72 @@
 ---
 layout: default_about
 ---
-		<div id="fh5co-page">
-      {% include header.html %}
+
+<div id="fh5co-page">
+    {% include header.html %}
     <div class="fh5co-hero fh5co-hero-2 fh5co-hero-short">
-      <div class="fh5co-overlay fh5co-overlay-short"></div>
-      <div class="fh5co-cover fh5co-cover_2 text-center fh5co-cover-short" data-stellar-background-ratio="0.5" style="background-image: url(/static_files/crypto2.jpg);">
-        <div class="desc animate-box">
-          <h2><font color="white"><strong>About</strong> Us</font></h2>
+        <div class="fh5co-overlay fh5co-overlay-short"></div>
+        <div
+            class="fh5co-cover fh5co-cover_2 text-center fh5co-cover-short"
+            data-stellar-background-ratio="0.5"
+            style="background-image: url(/static_files/crypto2.jpg)"
+        >
+            <div class="desc animate-box">
+                <h2>
+                    <font color="white">{{site.about.header}}</font>
+                </h2>
+            </div>
         </div>
-      </div>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2 animate-box">
-          <div align="justify">
-            <center><img src="/static_files/mission-vision-values-graphic.png" style="width:300px;height:300px;" class="center" /></center>
-              {{content}}
+    <div class="container" style="padding-top: 60px">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 animate-box">
+                <div align="justify">
+                    <center>
+                        <img
+                            src="{{site.about.graphic-url}}"
+                            style="width: 300px; height: 300px"
+                            class="center"
+                        />
+                    </center>
+                    {{content}}
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div id="fh5co-about" style="padding-bottom: 0">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-          <h3>People</h3>
-					<div class="row">
-						{% for person in page.people %}
-						<div class="col-md-3 people-container">
-							<img src="/static_files/people/{{ person.photo }}"><br>
-							<h4>{{ person.name }}</h4>
-							<h5 style="font-weight: bold">{{ person.title }}</h5>
-							<h5 style="color: #66D37E">{{ person.affiliation }}</h5>
-						</div>
-						{% endfor %}
-					</div>
+    <div id="fh5co-about" style="padding-bottom: 0">
+        <div class="container">
+            <div class="row">
+                <div
+                    class="col-md-8 col-md-offset-2 animate-box fadeInUp animated"
+                >
+                    <h3>{{site.about.people-header}}</h3>
+
+                    <div class="dev3lop-people-container">
+                        {% for person in page.people %}
+                        <div
+                            class="col-md-1 people-container"
+                            style="width: 200px"
+                        >
+                            <img
+                                src="/static_files/people/{{ person.photo }}"
+                            /><br />
+                            <h4 style="padding-top: 10px">{{ person.name }}</h4>
+                            <h5 style="font-weight: bold">
+                                {{ person.title }}
+                            </h5>
+                            <h5 style="color: #66d37e">
+                                {{ person.affiliation }}
+                            </h5>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-    {% include contributors.html %}
-  <br /><br />
+    {% include contributors.html %} {% include footer.html %}
+
+    <br /><br />
 </div>
