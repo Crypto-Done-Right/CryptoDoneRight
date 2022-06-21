@@ -574,12 +574,13 @@ figure {
   text-align: center;
   width: 15%;
   margin-bottom: 8px !important;
+  color: black;
 }
 
-.qs {
+/* .qs {
   border: 2px solid rgba(0,15,42,0.7);
   background-color: white;
-}
+} */
 @media screen and (max-width: 992px) {
   .feature-left .icon {
     width: 10%;
@@ -594,7 +595,7 @@ figure {
   display: table-cell;
   vertical-align: middle;
   font-size: 40px;
-  color: #66D37E;
+  color: black;
 }
 .feature-left .feature-copy {
   float: right;
@@ -1501,4 +1502,12 @@ button.gsc-search-button
   margin-left: 36%;
   margin-right: auto;
 	margin-top: -40px;
+}
+
+.top-buffer {
+  margin-top: 50px;
+}
+
+.feature-left {
+  background-color: lightblue;
 }
