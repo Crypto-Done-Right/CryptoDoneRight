@@ -27,7 +27,7 @@ related-articles:
 <font size="4"><strong>What to expect:</strong></font><br /> <br />
 For TLSv1.2, the following configuration settings will provide the best possible security (mitigation of all known vulnerabilties):
 <ul>
-<li>Enabling TLSv1.2 - First step is to ensure that your devices are configured for accepting and establishing TLSv1.2 connections. For security reason, it also needs to be further ensured that older versions of SSL/TLS are disabled. Server and Client must reject any connections offering SSL 1.0, SSL 2.0, SSL 3.0, TLS 1.0
+<li>Enabling TLSv1.2 - First step is to ensure that your devices are configured for accepting and establishing TLSv1.2 connections. For security reason, it also needs to be further ensured that older versions of SSL/TLS are disabled. Server and Client must reject any connections offering SSL 1.0, SSL 2.0, SSL 3.0, TLS 1.0, TLS 1.1
 </li>
 <li>Cipher Suites: A configurable option that most product vendors provide with SSL/TLS is called the Cipher Suite. The cipher suite decides the key exchange, signature, encryption and hashing algorithm used with SSL/TLS. There are various options with all the above mentioned parameters and some of them have been marked as unsafe due to vulnerabilities found in recent times. Special care must be taken to ensure that TLSv1.2 is configured correctly and below are the recommended cipher suites. The recommendations are based on a recent attack called a ROBOT attacks <a href="tls-1-2-vuln.html">Learn more</a>.</li>
 <li>DH Parameters: Diffie Helman Key Exchange protocol is a popular protocol option for exchanging keys between a server and a client in a secure fashion. SSL/TLS provides options to use DH but it should be ensured that the right kind of keys are configured for the protocol. The recommendations are based on the LogJam attack<a href="tls-1-2-vuln.html#logjam">Learn more</a>.</li>
@@ -68,7 +68,7 @@ Explanation: <br />
 For more browser compatibility you can use:- <br />
 <pre>
 <code>...
-SSLProtocol -all +TLSv1.1 +TLSv1.2
+SSLProtocol -all +TLSv1.2
 ...</code>
 </pre>
 
@@ -76,7 +76,7 @@ SSLProtocol -all +TLSv1.1 +TLSv1.2
 By default, the configuration file is named nginx.conf and placed in the directory /usr/local/nginx/conf , /etc/nginx , or /usr/local/etc/nginx.
 <pre>
 <code>...
-ssl_protocols TLSv1.1 TLSv1.2;
+ssl_protocols TLSv1.2;
 ...</code>
 </pre> <br /> <br />
 
