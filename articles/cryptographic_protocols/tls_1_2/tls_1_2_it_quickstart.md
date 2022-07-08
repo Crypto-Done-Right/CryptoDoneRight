@@ -215,20 +215,17 @@ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 as defined in RFC 5289<br />
 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 as defined in RFC 5289<br />
 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 as defined in RFC 5289<br /><br />
 
-<strong>Avoid the following ciphers:</strong> <br />
+<strong>Disable the following ciphers:</strong> <br />
 TLS_DHE_RSA_WITH_AES_128_CBC_SHA <br />
 TLS_DHE_RSA_WITH_AES_256_CBC_SHA <br />
 TLS_DHE_RSA_WITH_AES_128_CBC_ SHA256 <br />
-TLS_DHE_RSA_WITH_AES_256_CBC_ SHA256 <br /> <br />
+TLS_DHE_RSA_WITH_AES_256_CBC_ SHA256 <br />
+TLS_RSA_WITH_AES_128_CBC_SHA <br />
+TLS_RSA_WITH_AES_256_CBC_SHA <br />
+TLS_RSA_WITH_AES_128_CBC_SHA256 <br />
+TLS_RSA_WITH_AES_256_CBC_SHA256 <br /> <br />
 
-The following ciphers <strong>may be supported, but aren’t recommended for best practices.</strong> The reason is they use RSA for both authentication and key exchange so they use a static public key in a X.509 certificate for key exchange; thus, they do not provide perfect forward secrecy and are susceptible to <a href="https://robotattack.org/"> ROBOT Attack.</a> <br /><br />
-
-TLS_RSA_WITH_AES_128_CBC_SHA<br />
-TLS_RSA_WITH_AES_256_CBC_SHA<br />
-TLS_RSA_WITH_AES_128_CBC_SHA256<br />
-TLS_RSA_WITH_AES_256_CBC_SHA256<br /><br />
-
-The problem with this is that using RSA for key exchange does not provide perfect forward secrecy since you are not using ephimeral “one-time use” keys. <br /> <br />
+The problem with this is that using RSA for key exchange does not provide perfect forward secrecy since you are not using ephemeral “one-time use” keys which means they are susceptible to the <a href="https://robotattack.org/">ROBOT Attack. <br /> <br />
 
 <strong>Note:</strong> <br />
 

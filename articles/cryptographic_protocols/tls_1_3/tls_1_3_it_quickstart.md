@@ -58,14 +58,14 @@ TLS 1.3 is supported starting from Nginx 1.13 version. If you are running older 
 The default configuration under SSL settings should look like this:
 <pre>
 <code>...
-ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+ssl_protocols TLSv1.2;
 ...</code>
 </pre> <br /> <br />
 
 Add TLSv1.3 at the end of the line, and so it looks like below:
 <pre>
 <code>...
-ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
+ssl_protocols TLSv1.2 TLSv1.3;
 ...</code>
 </pre>
 
