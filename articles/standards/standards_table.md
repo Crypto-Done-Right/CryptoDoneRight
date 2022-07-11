@@ -27,7 +27,7 @@ tr:nth-child(even) {
     <th> <font size="4">Algorithms</font> </th>
     <th> <font size="4">Recommended</font></th>
     <th> <font size="4">Acceptable</font> </th>
-    <th> <font size="4">Avoid</font></th>
+    <th> <font size="4">Disable</font></th>
     <th> <font size="4">Future</font> </th>
     <th> <font size="4">Debated</font> </th>
     <th> <font size="4">FIPS140</font> </th>

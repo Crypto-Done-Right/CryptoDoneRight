@@ -1,7 +1,7 @@
 Algorithm,recommended,acceptable,avoid,future,debated,FIPS140,CC,SuiteB,CSFC,PCI
 SSL 3.0 or lower,,,TRUE,,,,,,,
 TLS v1.0 or lower,,,TRUE,,,,,,,
-TLSv1.1,,TRUE,,,,TRUE,TRUE,,,TRUE
+TLSv1.1,,TRUE,TRUE,,,TRUE,TRUE,,,TRUE
 TLSv1.2,TRUE,,,,,TRUE,TRUE,,TRUE,TRUE
 TLSv1.3,TRUE,,,,,TRUE,TRUE,,TRUE,TRUE
 Dual_EC_DRBG,,,TRUE,,,,,,,
@@ -40,7 +40,7 @@ aes192-cbc,,,TRUE,,,TRUE,TRUE,,,TRUE
 aes256-cbc,,,TRUE,,,TRUE,TRUE,,,TRUE
 AEAD_AES_256_GCM,,,,,,,TRUE,,,
 AEAD_AES_128_GCM,,,,,,,TRUE,,,
-ssh-rsa,TRUE,,,,,TRUE,TRUE,,,
+ssh-rsa,TRUE,,TRUE,,,TRUE,TRUE,,,
 ecdsa-sha2-nistp256,TRUE,,,,,TRUE,TRUE,,,
 ecdsa-sha2-nistp384,,TRUE,,,,TRUE,TRUE,,,
 ecdsa-sha2-nistp521,,TRUE,,,,TRUE,TRUE,,,

@@ -225,7 +225,7 @@ TLS_RSA_WITH_AES_256_CBC_SHA <br />
 TLS_RSA_WITH_AES_128_CBC_SHA256 <br />
 TLS_RSA_WITH_AES_256_CBC_SHA256 <br /> <br />
 
-The problem with this is that using RSA for key exchange does not provide perfect forward secrecy since you are not using ephemeral “one-time use” keys which means they are susceptible to the <a href="https://robotattack.org/">ROBOT Attack. <br /> <br />
+The problem with this is that using RSA for key exchange does not provide perfect forward secrecy since you are not using ephemeral “one-time use” keys which means they are susceptible to the <a href="https://robotattack.org/">ROBOT Attack.</a> <br /> <br />
 
 <strong>Note:</strong> <br />
 
