@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+
+    <body id="page-top" class="index">
+
+    {% include header.html %}
+
+    <section>
+      <div class="container">
+        <h1>{{ page.title }}</h1>
+
+        <p class="post-meta">
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {% assign date_format = "%-d %B %Y" %}
+            {{ page.date | date: date_format }}
+          </time>
+          {% if page.author %}
+            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+          {% endif %}
+           • 
+          {% for tag in page.tags %}
+            {% assign tag_slug = tag | slugify: "raw" %}
+            <a class="tag-link" href={{ site.baseurl | append: "/tags/" | append: tag_slug | append: "/" }}
+              rel="category tag">#{{ tag }}</a>
+          {% endfor %}
+        </p>
+
+        {% if page.img %}
+        <div class="container">
+          <br/>
+          <img src="/img/{{ page.img }}" class="img-responsive img-centered" alt="" style="max-width: 62%">
+        </div>
+        <br/>
+        {% endif %}
+
+        <div class="post-content" itemprop="articleBody">
+          {{ content }}
+        </div>
+
+      </div>
+      {% if site.disqus.shortname %}
+        {% include disqus_comments.html %}
+      {% endif %}
+    </section>
+
+    {% include learn_more.html %}
+
+    {% include footer.html %}
+    {% include js.html %}
+
+    </body>
+</html>
