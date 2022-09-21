@@ -4,7 +4,7 @@ title: "IT Admin's QuickStart"
 type: TLS 1.2
 qtype: it
 upper-link: /articles/cryptographic_protocols/tls_1_2/tls_1_2.html
-image: /static_files/common/NewDevLogo.png
+image: /img/common/NewDevLogo.png
 note: "Are you an IT administrator? Get started with best practice setup details above."
 col: col-md-4 col-sm-4 col-xs-4 infoBlocks
 further-reading:
@@ -22,7 +22,7 @@ related-articles:
 ---
 <p id="GeneralTLSInfo">
 
-<h2> <img src="/static_files/common/configuration.jpg " style="width:110px;height:100px;" /> TLS 1.2 Configuration </h2>
+<h2> <img src="/img/common/configuration.jpg " style="width:110px;height:100px;" /> TLS 1.2 Configuration </h2>
 
 <font size="4"><strong>What to expect:</strong></font><br /> <br />
 For TLSv1.2, the following configuration settings will provide the best possible security (mitigation of all known vulnerabilties):
@@ -234,7 +234,7 @@ The DHE ciphers are safe to use only if dh group 14 (2048 bit) key sizes are bei
 Here is another good write-up: <a href="http://crypto.stackexchange.com/questions/15329/tls-ssls-usage-of-non-ephemeral-dh-vs-dhe"> Usage of non-ephermeral-dh vs dhe </a>.<br /><br />
 </p>
 
-<h2> <img src="/static_files/common/patch.png " style="width:100px;height:100px;" /> Upgrade/Patch Management </h2>
+<h2> <img src="/img/common/patch.png " style="width:100px;height:100px;" /> Upgrade/Patch Management </h2>
 
 <font size="4"><strong>Concept:</strong></font> There are no notable patches or upgrades that are present for any of the popular products using TLSv1.2. But IT administrators should always keep a close watch on any patches or upgrade notifications from product vendors. The expectation is that these patches will not particularly target protocol vulnerabilities but rather implementation ones. For example, a software bug in Cisco product allows compromise of TLSv1.2's security. Understanding a newly released patch or upgrade should be possible by reading its respective documentation and queries of any sort should be clarified with the product manufacturers to ensure a smooth process with no adverse impacts.
  <br /> <strong> Note: </strong>

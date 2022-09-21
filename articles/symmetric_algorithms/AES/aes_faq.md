@@ -5,7 +5,7 @@ type: AES
 upper-link: /articles/symmetric_algorithms/aes/aes.html
 ---
 <p>
-<img src="/static_files/common/faqs.jpg" style="width:500px;height:100px;" class="center" />
+<img src="/img/common/faqs.jpg" style="width:500px;height:100px;" class="center" />
 
             <center><h2>AES FAQs</h2></center>
             <br /> <br />

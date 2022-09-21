@@ -40,22 +40,22 @@ A _certificate_ contains the public key of the party who the certificate belongs
 If the certificate issuer is trusted, we assume the public key and metadata contained in the certificate is itself trusted, too. What if we don't know and trust the certificate issuer? Then we check to see if the certificate we have sent along its chain. A **certificate chain** is simply the set of certificates we find when we start at the target certificate (i.e. example.com), look at the **issuer**'s certificate, look at the issuer's issuer's certificate, and so on until we arrive at the root. **Root certificates** are the end of the certificate chain. In a browser, root certificates are typically from well-known **Certificate Authorities**, such as Comodo or DigiCert. These companies are known and trusted around the internet, so their root certificates are installed, or **pre-trusted**, in the browser. If the root of a certificate chain is not from a trusted source, then we don't trust the target certificate either.
 
 <p style="margin-bottom:0">Source: DigiCert blog at <a href="https://knowledge.digicert.com/solution/SO16297.html">https://knowledge.digicert.com/solution/SO16297.html</a></p>
-<img style="margin-top:0" src="/static_files/certs/cert_chain.png"/>
+<img style="margin-top:0" src="/img/certs/cert_chain.png"/>
 
 #### How does a certificate contribute to encrypted internet communications?
 Recall that one of the main items contained within a certificate is the owner's public key. Also recall that when we browse the internet, we should be doing so via the [TLS protocol](/articles/cryptographic_protocols/tls_1_3/tls_1_3.html). The premise of TLS is to provide **secure** connections between you and a web server. As part of the secure session establishment in TLS, the client will use the server's public key to encrypt what's called a _pre-master secret_ (remember that when something is encrypted with a public key, it can only be decrypted with the corresponding private key). You can read more about that on the TLS page, but in short it provides the information needed for both the client and the server to derive a symmetric encryption key that they will use to encrypt the rest of their session.
 
 <div class="row">
   <div class="row">
-    <div class="col-md-3 cert-img"><img src="/static_files/certs/cert-1.png"/></div>
-    <div class="col-md-3 cert-img"><img src="/static_files/certs/cert-2.png"/></div>
-    <div class="col-md-3 cert-img"><img src="/static_files/certs/cert-3.png"/></div>
-    <div class="col-md-3 cert-img"><img src="/static_files/certs/cert-4.png"/></div>
+    <div class="col-md-3 cert-img"><img src="/img/certs/cert-1.png"/></div>
+    <div class="col-md-3 cert-img"><img src="/img/certs/cert-2.png"/></div>
+    <div class="col-md-3 cert-img"><img src="/img/certs/cert-3.png"/></div>
+    <div class="col-md-3 cert-img"><img src="/img/certs/cert-4.png"/></div>
   </div>
   <div class="row">
-    <div class="col-md-3 cert-img"><img src="/static_files/certs/cert-5.png"/></div>
-    <div class="col-md-3 cert-img"><img src="/static_files/certs/cert-6.png"/></div>
-    <div class="col-md-3 cert-img"><img src="/static_files/certs/cert-7.png"/></div>
-    <div class="col-md-3 cert-img"><img src="/static_files/certs/cert-8.png"/></div>
+    <div class="col-md-3 cert-img"><img src="/img/certs/cert-5.png"/></div>
+    <div class="col-md-3 cert-img"><img src="/img/certs/cert-6.png"/></div>
+    <div class="col-md-3 cert-img"><img src="/img/certs/cert-7.png"/></div>
+    <div class="col-md-3 cert-img"><img src="/img/certs/cert-8.png"/></div>
   </div>
 </div>

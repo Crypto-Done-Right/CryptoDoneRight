@@ -101,7 +101,7 @@ For developer's quickstart page, use this:
 layout: quickstart
 title: "Developer's QuickStart"
 type: test
-image: /static_files/common/NewDevLogo.png
+image: /img/common/NewDevLogo.png
 note: "Are you a developer? Get started with crucial implementation details above."
 col: col-md-4 col-sm-4 col-xs-4 infoBlocks
 alerts:
@@ -142,7 +142,7 @@ For IT's quickstart page, use this:
 layout: quickstart
 title: "IT's QuickStart"
 type: test
-image: /static_files/common/NewDevLogo.png
+image: /img/common/NewDevLogo.png
 note: "Are you an IT administrator? Get started with best practice setup details above."
 col: col-md-4 col-sm-4 col-xs-4 infoBlocks
 alerts:
@@ -183,7 +183,7 @@ For manager's quickstart page, use this:
 layout: quickstart
 title: "Manager's QuickStart"
 type: test
-image: static_files/common/NewDevLogo.png
+image: img/common/NewDevLogo.png
 note: "Are you a Manager? Get started with best practice setup details above."
 col: col-md-8 col-sm-8 col-xs-8 infoBlocks
 alerts:
@@ -222,7 +222,7 @@ For page that is under construction, add the following under the content section
 ```
 Hi there! This page is currently under construction. If you would like to share your expertise relating to this topic with us , please <a href="CONTRIBUTING-template.md">click here!</a>
 
-<img src="/static_files/common/under_construction.jpg" style="width:70%;height:70%;" alt="under construction image">
+<img src="/img/common/under_construction.jpg" style="width:70%;height:70%;" alt="under construction image">
 ```
 
 

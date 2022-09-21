@@ -4,7 +4,7 @@ title: "Developer's QuickStart"
 type: AES
 qtype: dev
 upper-link: /articles/symmetric_algorithms/aes/aes.html
-image: /static_files/common/NewDevLogo.png
+image: /img/common/NewDevLogo.png
 note: "Introduction to using AES ciphers in source code. Examples in Python and C++ illustrate the basic encryption/decryption operations as well as configuring the mode of operation and key generation."
 col: col-md-4 col-sm-4 col-xs-4 infoBlocks
 alerts:
@@ -16,7 +16,7 @@ related-articles:
 attacks:
 
 ---
-## <img src="/static_files/common/implementation.png " style="width:100px;height:100px;" /> AES for Developers
+## <img src="/img/common/implementation.png " style="width:100px;height:100px;" /> AES for Developers
 
 ### **Concept**
 DO NOT roll your own Crypto! Use standard services and libraries.

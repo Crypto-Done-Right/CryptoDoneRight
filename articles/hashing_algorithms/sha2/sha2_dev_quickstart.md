@@ -4,11 +4,11 @@ title: "Developer's QuickStart"
 type: SHA2
 qtype: dev
 upper-link: /articles/hashing_algorithms/sha2.html
-image: /static_files/common/NewDevLogo.png
+image: /img/common/NewDevLogo.png
 note: "Are you a developer? Get started with crucial implementation details above."
 col: col-md-4 col-sm-4 col-xs-4 infoBlocks
 ---
-## <img src="/static_files/common/implementation.png " style="width:100px;height:100px;" /> SHA2 Implementation
+## <img src="/img/common/implementation.png " style="width:100px;height:100px;" /> SHA2 Implementation
 
 ## Usage of Cryptography in Programming Languages
 
@@ -135,7 +135,7 @@ For example to prove that "Rosetta code" translates to 764faf5c61ac315f1497f9dfa
 
 Salt should be generated using a Cryptographically Secure Pseudo-Random Number Generator (CSPRNG). CSPRNGs are very different than ordinary pseudo-random number generators, like the "C" language's rand() function. As the name suggests, CSPRNGs are designed to be cryptographically secure, meaning they provide a high level of randomness and are completely unpredictable. We don't want our salts to be predictable, so we must use a CSPRNG. The following table lists some CSPRNGs that exist for some popular programming platforms.
 
-<img src="/static_files/CSPRNG.JPG" style="width:600px;height:500px;" />
+<img src="/img/CSPRNG.JPG" style="width:600px;height:500px;" />
 
 **In a Web Application, always hash on the server**\\
 If you are writing a web application, you might wonder where to hash. Should the password be hashed in the user's browser with JavaScript, or should it be sent to the server "in the clear" and hashed there?
@@ -153,7 +153,7 @@ Some web browsers don't support JavaScript, and some users disable JavaScript in
 You need to salt the client-side hashes too. The obvious solution is to make the client-side script ask the server for the user's salt. Don't do that, because it lets the bad guys check if a username is valid without knowing the password. Since you're hashing and salting (with a good salt) on the server too, it's OK to use the username (or email) concatenated with a site-specific string (e.g. domain name) as the client-side salt.\\
 [https://crackstation.net/hashing-security.htm](https://crackstation.net/hashing-security.htm)
 
-## <img src="/static_files/common/patch.png " style="width:100px;height:100px;" /> Upgrade/Patch Management
+## <img src="/img/common/patch.png " style="width:100px;height:100px;" /> Upgrade/Patch Management
 
 ### **Concept**
 <span class="red">Please be careful while upgrading your crypto library. Do not simply upgrade the package without thinking about the implications it might have on existing features of your application or operating system. </span>

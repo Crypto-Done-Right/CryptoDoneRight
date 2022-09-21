@@ -5,7 +5,7 @@ type: TLS 1.2
 upper-link: /articles/cryptographic_protocols/tls_1_2/tls_1_2.html
 ---
 <p>
-  <img src="/static_files/common/faqs.jpg" style="width:500px;height:100px;" class="center" />
+  <img src="/img/common/faqs.jpg" style="width:500px;height:100px;" class="center" />
   <center><h2>TLS/TLSv1.2 FAQs</h2></center><br /><br />
   <blockquote>
 		<ul>

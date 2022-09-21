@@ -4,7 +4,7 @@ title: "Developer's QuickStart"
 type: AES-GCM
 qtype: dev
 upper-link: /articles/symmetric_algorithms/mode_gcm/mode_gcm.html
-image: /static_files/common/NewDevLogo.png
+image: /img/common/NewDevLogo.png
 note: "Are you a developer? Get started with crucial implementation details above."
 col: col-md-4 col-sm-4 col-xs-4 infoBlocks
 alerts:
@@ -15,7 +15,7 @@ related-articles:
 
 attacks:
 ---
-## <img src="/static_files/common/configuration.jpg " style="width:110px;height:100px;" /> AES GCM Mode
+## <img src="/img/common/configuration.jpg " style="width:110px;height:100px;" /> AES GCM Mode
 
 **Why GCM Mode**\\
 Considered a safe and efficient method of operation. It is a very popular choice for authenticated encryption [MAC](https://crypto.stackexchange.com/questions/12178/why-should-i-use-authenticated-encryption-instead-of-just-encryption).
@@ -47,7 +47,7 @@ It would be a mistake to encrypt 20 strings using an instance of the Crypt2 obje
 <span class="green">Good points:</span>  Secure when done right, parallel encryption and decryption with authentication built in.\\
 <span class="red">Bad points:</span>  Not many. It is complicated to implement and can be catostrophical if not implemented correctly.
 
-## <img src="/static_files/common/implementation.png " style="width:100px;height:100px;" /> AES Implementation
+## <img src="/img/common/implementation.png " style="width:100px;height:100px;" /> AES Implementation
 
 ### **Concept**
 DO NOT roll your own Crypto! Use standard services and libraries.

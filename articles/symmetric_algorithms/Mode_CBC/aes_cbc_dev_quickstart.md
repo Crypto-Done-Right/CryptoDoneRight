@@ -4,7 +4,7 @@ title: "Developer's QuickStart"
 type: AES-CBC
 qtype: dev
 upper-link: /articles/symmetric_algorithms/mode_cbc/mode_cbc.html
-image: /static_files/common/NewDevLogo.png
+image: /img/common/NewDevLogo.png
 note: "Are you a developer? Get started with crucial implementation details above."
 col: col-md-4 col-sm-4 col-xs-4 infoBlocks
 alerts:
@@ -16,7 +16,7 @@ further-reading:
 related-articles:
 attacks:
 ---
-## <img src="/static_files/common/configuration.jpg " style="width:110px;height:100px;" /> AES CBC Introduction
+## <img src="/img/common/configuration.jpg " style="width:110px;height:100px;" /> AES CBC Introduction
 
 **Why CBC Mode**\\
 CBC - Cipher Block Chaining. This mode is very common, and is considered to be reasonably secure.
@@ -45,7 +45,7 @@ aes-256-cbc ← this is recommended
 <span class="green">Good points:</span>  Secure when used properly, parallel decryption.\\
 <span class="red">Bad points:</span>  No parallel encryption, susceptible to malleability attacks when authenticity checks are bad / missing. But when done right, it's very good.
 
-## <img src="/static_files/common/implementation.png" style="width:100px;height:100px;" /> AES Implementation
+## <img src="/img/common/implementation.png" style="width:100px;height:100px;" /> AES Implementation
 
 ### **Concept**
 DO NOT roll your own Crypto! Use standard services and libraries.

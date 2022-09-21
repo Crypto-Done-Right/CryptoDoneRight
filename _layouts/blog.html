@@ -14,7 +14,7 @@
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">Blog</h2>
             <h3 class="section-subheading text-muted">
-              Musings of our thought leaders <br />
+              Keep up to date on cryptography news <br />
               <hr />
             </h3>
           </div>
@@ -28,7 +28,7 @@
             </div>
             <div class="col-md-9 post-area">
               <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
-              <p class="post-date">{{ post.date | date: "%-d %B %Y" }}</p>
+              <p class="post-date">{{ post.date | date: "%B %-d %Y" }}</p>
               <p>
                 {{ post.content | strip_html | truncatewords: 50 }}
               </p>
@@ -39,35 +39,12 @@
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-3">
-          <div class="all-tags">
-            All tags:
-            <ul>
-              {% assign tags = site.posts | all_tags %}
-              {% for tag in tags %}
-                {% assign tag_slug = tag['name'] | slugify: "raw" %}
-                <li>
-                  <a class="tag-link"
-                    href={{ site.baseurl | append: "/tags/" | append: tag_slug | append: "/" }}
-                    rel="category tag">
-                    #{{ tag['name'] }} ({{ tag['count'] }})
-                  </a>
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
-          <ul class="social-media-list">
-            <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-          </ul>
-        </div>
 
         </div>
       </div>
     </section>
 
-    {% include get_connected.html %}
-
     {% include footer.html %}
-    {% include js.html %}
 
     </body>
 </html>
