@@ -1,8 +1,8 @@
 <!DOCTYPE html>
+
 <html>
 
   {% include head.html %}
-
 
     <body id="page-top" class="index">
 
@@ -10,22 +10,22 @@
 
     <section>
       <div class="container">
-        <h1>{{ page.title }}</h1>
+        
 
         <p class="post-meta">
-          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-            {% assign date_format = "%-d %B %Y" %}
+
+        <h1>{{ page.title }}</h1>
+
+          {% if page.author %}
+             <span itemprop="author" itemscope itemtype="http://schema.org/Person" style="font-size: 21px;"><span itemprop="name"><strong>{{ page.author }}</strong></span></span>
+          {% endif %} •
+
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" style="font-size: 21px;">
+            {% assign date_format = "%B %-d, %Y" %}
             {{ page.date | date: date_format }}
           </time>
-          {% if page.author %}
-            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-          {% endif %}
-           • 
-          {% for tag in page.tags %}
-            {% assign tag_slug = tag | slugify: "raw" %}
-            <a class="tag-link" href={{ site.baseurl | append: "/tags/" | append: tag_slug | append: "/" }}
-              rel="category tag">#{{ tag }}</a>
-          {% endfor %}
+          •
+
         </p>
 
         {% if page.img %}
@@ -47,5 +47,55 @@
     </section>
 
     {% include footer.html %}
+    {% include js.html %}
+
     </body>
+
+<style>
+
+p {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#footer {
+  background: #66D37E;
+  padding: 10px 0 10px;
+
+}
+
+#footer p {
+  color: white;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#footer p a {
+  color: rgba(255, 255, 255, 0.5);
+}
+#footer p a:hover, #footer p a:active, #footer p a:focus {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 125px;
+}
+
+
+    </style>
 </html>

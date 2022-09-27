@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: "Welcome to Crypto Done Right"
+title: "The Beginnings of Crypto Done Right"
 categories: blog
 author: "Debra Baker"
 type: blog
