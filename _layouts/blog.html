@@ -33,6 +33,9 @@
               <p class="post-date"><strong>{{post.author}}</strong>, {{ post.date | date: "%B %-d, %Y" }} </p>
               <p class="post-content">
                 {{ post.content | strip_html | truncatewords: 50 }}
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                  <button>Read more</button>
+                  </a>
               </p>
             </div>
           </div>
@@ -54,10 +57,12 @@
 
 .blog-photo {
 
-    object-fit: cover;
+    /* object-fit: cover; */
     position: relative;
     left: 0px;
     z-index: -1;
+    height: 100%;
+    width: 100%;
     /* display: inline-block; */
 
 }
@@ -107,21 +112,22 @@ p {
   /* width: 100%; */
   /* position: relative; */
   position: absolute;
-  left: 5vw;
+  left: 15vw;
   height: fit-content;
   overflow: hidden;
-  width: 90vw;
+  width: 70vw;
 }
 
 .post-img {
   box-sizing: content-box;
-  width: 23%;
-  height: 20%;
+  width: 15%;
+  height: 100%;
   position: relative;
   left: 0px;
   /* border: 1px solid green; */
   float: left;
-  padding:0%;
+  /* padding: 2vw; */
+  padding-right: 2vw;
 }
 
 #footer {
