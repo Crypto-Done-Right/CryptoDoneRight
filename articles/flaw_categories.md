@@ -20,7 +20,7 @@ related-articles:
 
   There are three major categories that one would need to consider while deciding a standard or version (example choosing between the different TLS versions.)
   <br /> <br />
-  <img src="/static_files/common/protocol.png" style="width:80px;height:80px;" /> <strong>STEP 1:- Algorithms</strong>
+  <img src="/img/common/protocol.png" style="width:80px;height:80px;" /> <strong>STEP 1:- Algorithms</strong>
   <br /> <br />
   Most of the technologies that are mentioned in this knowledge base are officially defined in documents called RFCs (Request for Comments).
   These are open documents that are made available by the IETF, Requests for comment (RFCs) cover many aspects of these protocols in a technical fashion.
@@ -37,7 +37,7 @@ related-articles:
   when a secure connection attempt fails, servers will fall back to older protocols such as SSL 3.0. An attacker who can trigger a connection failure can then force the use of SSL
   3.0 and attempt the new attack.
   <br /> <br />
-  <img src="/static_files/common/implementation.png " style="width:100px;height:100px;" /> <strong>STEP 2:- Implementation</strong>
+  <img src="/img/common/implementation.png " style="width:100px;height:100px;" /> <strong>STEP 2:- Implementation</strong>
   <br /> <br />
   While protocol's official definitions make up RFCs, implementation of the definition is left to the whoever chooses to use the protocol. And if an implementor introduces
   bugs in the way the protocol was written in code, it can be termed as an "Implementation Flaw". Specifically, in software development, a lot of network protocols come as
@@ -51,7 +51,7 @@ related-articles:
   <br /> <br />
   It should also be noted that bugs such as Heartbleed do not indicate that one should roll out their own crypto!
   <br /> <br />
-  <img src="/static_files/common/configuration.jpg " style="width:110px;height:100px;" /> <strong>STEP 3:- Configuration</strong>
+  <img src="/img/common/configuration.jpg " style="width:110px;height:100px;" /> <strong>STEP 3:- Configuration</strong>
   <br /> <br />
   A lot of protocols provide configruable options in their official definitions (RFCs). These options affect the way the protocol functions post deployment.
   It is important to be aware of the pros and cons including security implications of different configurable parameters. If a protocol is configured with an option that is

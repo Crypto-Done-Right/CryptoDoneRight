@@ -16,8 +16,8 @@ people:
   affiliation: Johns Hopkins University
   photo: joe.jpg
 - name: Debra Baker
-  title: Technical Program Manager
-  affiliation: RedSeal, Inc.
+  title: Director of Trust & Assurance
+  affiliation: 38North Security
   photo: debra.jpg
 - name: Scott Fluhrer
   title: Principal Engineer
@@ -25,7 +25,7 @@ people:
   photo: scott.jpg
 - name: Mike Ounsworth
   title:
-  affiliation: RedSeal, Inc.
+  affiliation: Entrust Datacard
   photo: mike.jpg
 ---
 

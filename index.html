@@ -11,7 +11,7 @@
 
   	<!-- Facebook and Twitter integration -->
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="static_files/lock-icon.ico">
+	<link rel="shortcut icon" href="img/lock-icon.ico">
 
 	<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'> -->
 
@@ -76,9 +76,9 @@ button.gsc-search-button
 
 
 	</head>
-	<link rel="apple-touch-icon" sizes="180x180" href="static_files/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="static_files/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="static_files/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
@@ -106,6 +106,7 @@ button.gsc-search-button
 		                </li>
 		              <li><a href="/about.html"><font color="white">About</font></a></li>
 		              <li><a href="/contact.html"><font color="white">Contact</font></a></li>
+					  <li><a href="/blog.html"><font color="white">Blog</font></a></li>
 		            </ul>
 		          </nav>
 		        </div>
@@ -116,7 +117,7 @@ button.gsc-search-button
 
 		<div class="fh5co-hero container-fluid">
 			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(static_files/crypto2.jpg);">
+			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(img/crypto2.jpg);">
 				<!-- <div class="desc animate-box">
 					<div class="row">
 						<div class="col-md-3 col-md-offset-2">
@@ -281,7 +282,7 @@ button.gsc-search-button
 			</div>
 			<div>
 		</div>
-			<div class="row index-scroll-icon"><div class="col-md-2 col-md-offset-5"><img src="static_files/scrollDownIcon.png"/></div></div>
+			<div class="row index-scroll-icon"><div class="col-md-2 col-md-offset-5"><img src="img/scrollDownIcon.png"/></div></div>
 		</div>
 		<!-- end:header-top -->
 		<!--<div id="fh5co-features" class="fh5co-section-gray">
@@ -342,7 +343,7 @@ button.gsc-search-button
 						<div class="feature-left">
 							</span>
 							<div class="feature-copy">
-								<p><a href ="https://github.com/jhu-information-security-institute/CryptoDoneRight/blob/master/CONTRIBUTING-template.md"><img src="static_files/getting_started_icon.png" alt="getting started" height="250" width="250" class="img-responsive"></a></p>
+								<p><a href ="https://github.com/jhu-information-security-institute/CryptoDoneRight/blob/master/CONTRIBUTING-template.md"><img src="img/getting_started_icon.png" alt="getting started" height="250" width="250" class="img-responsive"></a></p>
 							</div>
 						</div>
 					</div>
@@ -350,7 +351,7 @@ button.gsc-search-button
 						<div class="feature-left">
 							</span>
 							<div class="feature-copy">
-								<p><a href = "/userguide.html"><img src="static_files/tips_and_tutorials_icon.png" alt="tips and tutorials" height="250" width="250" class="img-responsive"></a></p>
+								<p><a href = "/userguide.html"><img src="img/tips_and_tutorials_icon.png" alt="tips and tutorials" height="250" width="250" class="img-responsive"></a></p>
 							</div>
 						</div>
 					</div>
@@ -358,7 +359,7 @@ button.gsc-search-button
 						<div class="feature-left">
 							</span>
 							<div class="feature-copy">
-							<p><a href ="https://docs.google.com/forms/d/e/1FAIpQLSenaO1MbJ5sgjKF5KYp-AwMbLEsiuEEioqOUnI1dqvievTAKw/viewform"><img src="static_files/feedback.png" alt="feedback" height="250" width="250" class="img-responsive"></a></p>
+							<p><a href ="https://docs.google.com/forms/d/e/1FAIpQLSenaO1MbJ5sgjKF5KYp-AwMbLEsiuEEioqOUnI1dqvievTAKw/viewform"><img src="img/feedback.png" alt="feedback" height="250" width="250" class="img-responsive"></a></p>
 							</div>
 						</div>
 					</div>
@@ -369,16 +370,16 @@ button.gsc-search-button
 
 
 		<footer>
-			<div id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 text-center">
-							<p>Copyright © 2017 - 2020 Crypto Done Right All Rights Reserved</p>
-						</div>
-					</div>
+			<div id="footer" style="background-color:#01DF74; position: fixed; bottom: 0;  width:100%;">
+			  <div class="container">
+				<div class="row">
+				  <div class="col-md-6 col-md-offset-3 text-center">
+					<p><font color="white">Copyright © 2017 - 2022 Crypto Done Right All Rights Reserved</font></p>
+				  </div>
 				</div>
+			  </div>
 			</div>
-		</footer>
+		  </footer>
 
 
 	</div>
@@ -407,4 +408,22 @@ button.gsc-search-button
 	<script src="js/main.js"></script>
 
 	</body>
+
+	<style>
+
+	#fh5co-feature-product::after {
+		content: '';
+  		display: block;
+  		height: 125px;
+	}
+
+	.fh5co-overlay {
+		z-index: -1;
+	}
+
+	footer {
+		z-index: 100;
+	}
+
+	</style>
 </html>

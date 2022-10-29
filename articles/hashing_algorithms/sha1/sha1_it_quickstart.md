@@ -4,7 +4,7 @@ title: IT Admin's QuickStart
 type: SHA1
 qtype: it
 upper-link: /articles/hashing_algorithms/sha1.html
-image: /static_files/common/manager.png
+image: /img/common/manager.png
 note: "Are you a Manager? Get started with best practice setup details above."
 col: col-md-4 col-sm-4 col-xs-4 infoBlocks
 ---

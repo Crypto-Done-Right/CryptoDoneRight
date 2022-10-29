@@ -186,6 +186,8 @@ figure {
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 
+
+
 /* Superfish Override Menu */
 .sf-menu {
   margin: 0 !important;
@@ -1070,10 +1072,34 @@ figure {
   color: #5a5a5a;
 }
 
-#footer {
+/* footer {
   background: #66D37E;
-  padding: 60px 0 40px;
+  padding: 40px 0 40px;
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  border: 2px solid #000;
+  border-width: 2px 0px 0px 0px;
+  padding:2vw;
+} */
+
+/* .post-content {
+  font-size: 90px;
+} */
+
+#footer {
+  position: fixed;
+  background: #66D37E;
+  padding: 40px 0 40px;
+  left:0;
+  bottom:0;
+  border: 2px solid #000;
+  border-width: 2px 0px 0px 0px;
+  padding:2vw;
+
 }
+
 #footer p {
   color: white;
   font-size: 14px;

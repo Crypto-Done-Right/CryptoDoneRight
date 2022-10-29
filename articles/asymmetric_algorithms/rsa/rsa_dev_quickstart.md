@@ -4,7 +4,7 @@ title: "Developer's QuickStart"
 type: RSA
 qtype: dev
 upper-link: /articles/asymmetric_algorithms/rsa/rsa.html
-image: /static_files/common/NewDevLogo.png
+image: /img/common/NewDevLogo.png
 note: "Are you a developer? Get started with crucial implementation details above."
 col: col-md-4 col-sm-4 col-xs-4 infoBlocks
 alerts:
@@ -16,7 +16,7 @@ related-articles:
 attacks:
 
 ---
-## <img src="/static_files/common/implementation.png " style="width:100px;height:100px;" /> RSA for Developers
+## <img src="/img/common/implementation.png " style="width:100px;height:100px;" /> RSA for Developers
 
 ### **Concept**
 DO NOT roll your own Crypto! Use standard services and libraries.

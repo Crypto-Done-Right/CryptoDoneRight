@@ -4,7 +4,7 @@ title: IT Admin's QuickStart
 type: 3DES
 qtype: it
 upper-link: /articles/symmetric_algorithms/3des/3des.html
-image: /static_files/common/pc-administrator.png
+image: /img/common/pc-administrator.png
 note: "Are you an IT administrator? Get started with best practice setup details above."
 col: col-md-4 col-sm-4 col-xs-4 infoBlocks
 alerts:
@@ -30,7 +30,7 @@ attacks:
 ---
 <p id="General">
 
-<h2> <img src="/static_files/common/configuration.jpg " style="width:110px;height:100px;" /> 3DES Configuration </h2>
+<h2> <img src="/img/common/configuration.jpg " style="width:110px;height:100px;" /> 3DES Configuration </h2>
 
 <font size="4"><strong>What to expect:</strong></font><br /> <br />
 3DES has been proven to be insecure. There are attacks possible against 3DES such as sweet32 which render the algorithm weak. But since 3DES is still used in today's Internet for backward compatibility reasons, we are suggesting use of 3DES only if absolutely necessary (AES is currently heading to be the recommended standard because it will provide more security in the long term). If 3DES is being used, care must be taken to ensure that it is properly configured. <br /> <br />
@@ -47,7 +47,7 @@ To read more about the attack, follow the link: <a href="https://www.synopsys.co
 </p>
 
 <p id="3despatch">
-<h2> <img src="/static_files/common/patch.png " style="width:100px;height:100px;" /> Upgrade/Patch Management </h2>
+<h2> <img src="/img/common/patch.png " style="width:100px;height:100px;" /> Upgrade/Patch Management </h2>
 
 <font size="4"><strong>Concept:</strong></font> : Upgrade to 3DES will likely not occur for any products. A lot of popular vendors such as OpenSSL have deprecated 3DES. Therefore, all products that use latest versions of OpenSSL to implement 3DES in software (a very popular and recommended choice) will most likely not be having any support for 3DES. It is therefore recommended that one understands if 3DES is still supported by the product you are going to use and upgrade/downgrade as necessary. Other implications with such downgrades/upgrades should be carefully considered too.  <br />
 <br />

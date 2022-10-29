@@ -4,7 +4,7 @@ title: "Developer's QuickStart"
 type: AES-CTR
 qtype: dev
 upper-link: /articles/symmetric_algorithms/mode_ctr/mode_ctr.html
-image: /static_files/common/NewDevLogo.png
+image: /img/common/NewDevLogo.png
 note: "Are you a developer? Get started with crucial implementation details above."
 col: col-md-4 col-sm-4 col-xs-4 infoBlocks
 alerts:
@@ -19,7 +19,7 @@ related-articles:
 
 attacks:
 ---
-## <img src="/static_files/common/configuration.jpg " style="width:110px;height:100px;" /> AES CTR Mode
+## <img src="/img/common/configuration.jpg " style="width:110px;height:100px;" /> AES CTR Mode
 
 **Why CTR Mode**\\
 Considered a safe and efficient method of operation. Both CBC and CTR come recommended by Niels Ferguson and Bruce Schneier, both of whom are respected cryptographers.
@@ -51,7 +51,7 @@ It would be a mistake to encrypt 20 strings using an instance of the Crypt2 obje
 <span class="green">Good points:</span>  Secure when done right, parallel encryption and decryption.\\
 <span class="red">Bad points:</span>  Not many. Some question the security of the "related plaintext" model but it's generally considered to be safe.
 
-## <img src="/static_files/common/implementation.png " style="width:100px;height:100px;" /> AES Implementation
+## <img src="/img/common/implementation.png " style="width:100px;height:100px;" /> AES Implementation
 
 ### **Concept**
 DO NOT roll your own Crypto! Use standard services and libraries.

@@ -48,7 +48,7 @@ border-left: 3px solid #619644;
   position: relative;
   margin-bottom: 0;
   z-index: 9999999;
-  background-image: url('/static_files/crypto3.jpg');
+  background-image: url('/img/crypto3.jpg');
 }
 
 .breadcrumb {

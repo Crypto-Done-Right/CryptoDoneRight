@@ -5,7 +5,7 @@ type: 3DES
 upper-link: /articles/symmetric_algorithms/3des/3des.html
 ---
 <p>
-  <img src="/static_files/common/faqs.jpg" style="width:500px;height:100px;" class="center" />
+  <img src="/img/common/faqs.jpg" style="width:500px;height:100px;" class="center" />
   <center><h2>3DES FAQs</h2></center>
   <br /> <br />
   <strong>What is 3DES? Why is it used?</strong> <br /> <br />
@@ -17,7 +17,7 @@ upper-link: /articles/symmetric_algorithms/3des/3des.html
   <br /><br />
   <strong>What is the difference between 3DES and DES?</strong>
   <br /> <br />
-  <img src="/static_files/des_versus_3des.jpg" style="width:500px;height:400px;" class="center" />
+  <img src="/img/des_versus_3des.jpg" style="width:500px;height:400px;" class="center" />
   <strong>Is 3DES safe to use?</strong>
   <br /> <br />
   Yes. It is. But there are enough reasons to move on. Although there are no attacks that are practical to be carried out, you can expect 3DES to be phased out eventually. There are various reasons for this as mentioned here:

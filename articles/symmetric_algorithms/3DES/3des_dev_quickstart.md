@@ -4,7 +4,7 @@ title: "Developer's QuickStart"
 type: 3DES
 qtype: dev
 upper-link: /articles/symmetric_algorithms/3des/3des.html
-image: /static_files/common/NewDevLogo.png
+image: /img/common/NewDevLogo.png
 note: "Are you a developer? Get started with crucial implementation details above."
 col: col-md-4 col-sm-4 col-xs-4 infoBlocks
 alerts:
@@ -27,7 +27,7 @@ related-articles:
 attacks:
 
 ---
-## <img src="/static_files/common/implementation.png " style="width:100px;height:100px;" /> 3DES Implementation
+## <img src="/img/common/implementation.png " style="width:100px;height:100px;" /> 3DES Implementation
 
 ### **Concept**
 DO NOT roll your own Crypto! Use standard services and libraries.

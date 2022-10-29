@@ -4,7 +4,7 @@ title: "Manager's QuickStart"
 type: TLS 1.2
 qtype: manager
 upper-link: /articles/cryptographic_protocols/tls_1_2/tls_1_2.html
-image: /static_files/common/NewDevLogo.png
+image: /img/common/NewDevLogo.png
 note: "Are you a Manager? Get started with best practice setup details above."
 col: col-md-8 col-sm-8 col-xs-8 infoBlocks
 alerts:
@@ -26,7 +26,7 @@ related-articles:
   SSL/TLS is one of the most popular technology that aims at, mainly through cryptography, securing communication between different networks. SSL provides a way for two parties to establish a session and transfer data over the session while ensuring privacy, confidentiality and integrity. All secure communications on the internet at this moment use this same technology (HTTPS). Some of the popular software applications that use SSL are VPNs and Web Browsers. For example, in client-server environment, an SSL link ensures that all data passed between the web server and browsers remain private and integral. SSLv2 and TLSv1 are the 2 versions of this protocol (SSLv1 was never publicly released). After TLSv1, SSL was renamed to TLS. Those protocols are standardized and described by RFCs.
   <br /> <br />
 
-<h4><img src="/static_files/common/protocol.png" style="width:80px;height:80px;"/>Protocol:</h4>
+<h4><img src="/img/common/protocol.png" style="width:80px;height:80px;"/>Protocol:</h4>
   TLSv1 is not safe. It has a few critical vulnerabilities and is rightly being decommissioned by a lot of popular vendors and product manufacturers. There have been major flaws found with TLSV1 protocol such as <a href="https://blog.qualys.com/ssllabs/2013/09/10/is-beast-still-a-threat">Beast</a>. There were other factors too apart from the vulnerabilities that led to TLSv1 being marked as an obsolete technology. Since this is a flaw in the official definition and standardization of the protocol, the only option to fix this issue is to upgrade the version of SSL (now being called TLS) being used. Note that upgrading the protocol does not result in any difference in what SSL was intended to do (secure communication), an upgrade to the protocol simply means that the technology is patched for flaws that could compromise the security of the product using it.
   <br /> <br />
   <h5>High-level Action Plan: </h5>
@@ -39,7 +39,7 @@ related-articles:
   <br /> <br />
   </ul>
 
-<h4><img src="/static_files/common/implementation.png " style="width:100px;height:100px;"/>Implementation:</h4>
+<h4><img src="/img/common/implementation.png " style="width:100px;height:100px;"/>Implementation:</h4>
 
   Note: Only think about Implementation if you are in a situation where legacy hardware or software cannot be upgraded to support at least TLSv1.1
   <br /> <br />
@@ -55,7 +55,7 @@ related-articles:
   <br /> <br />
   </ul>
 
-<h4><img src="/static_files/common/configuration.jpg " style="width:110px;height:100px;" />Configuration:</h4>
+<h4><img src="/img/common/configuration.jpg " style="width:110px;height:100px;" />Configuration:</h4>
 
   TLSv1.2 offer a few options with configuration. Some of these are Cipher Suites, Key lengths, Hash Functions used by your CA to sign your keys. Keep in mind that the security of your system is only as strong as the weakest link in the chain. For example, a strong cipher alone does not guarantee good security. The keys and the certificates are just as important, as well as the hash functions and keys used by the Certification Authority (CA) to sign your keys. The parameters for these settings depend on the version of SSL/TLS that is being used and therefore great care must be taken in choosing the best combination of the above settings.
   <br /> <br />

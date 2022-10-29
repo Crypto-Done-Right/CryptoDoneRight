@@ -4,7 +4,7 @@ title: IT Admin's QuickStart
 type: AES-CBC
 qtype: it
 upper-link: /articles/symmetric_algorithms/mode_cbc/mode_cbc.html
-image: /static_files/common/pc-administrator.png
+image: /img/common/pc-administrator.png
 note: "Are you an IT administrator? Get started with best practice setup details above."
 col: col-md-4 col-sm-4 col-xs-4 infoBlocks
 
@@ -17,7 +17,7 @@ alerts:
 
 <p id="GeneralAESInfo">
 
-<h2> <img src="/static_files/common/configuration.jpg " style="width:110px;height:100px;" /> AES CBC Introduction </h2>
+<h2> <img src="/img/common/configuration.jpg " style="width:110px;height:100px;" /> AES CBC Introduction </h2>
 
 <font size="3"><strong>How it works: </strong></font><br />
 Each block of plaintext is xor'ed with the previous block of ciphertext before being transformed, ensuring that identical plaintext blocks don't result in identical ciphertext blocks when in sequence. For the first block of plaintext (which doesn't have a preceding block) we use an initialization vector instead. This value should be unique per message per key, to ensure that identical messages don't result in identical ciphertexts. <br /> <br />

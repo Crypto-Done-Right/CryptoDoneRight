@@ -4,7 +4,7 @@ title: "Developer's QuickStart"
 type: TLS 1.2
 qtype: dev
 upper-link: /articles/cryptographic_protocols/tls_1_2/tls_1_2.html
-image: /static_files/common/NewDevLogo.png
+image: /img/common/NewDevLogo.png
 note: "Are you a developer? Get started with crucial implementation details above."
 col: col-md-4 col-sm-4 col-xs-4 infoBlocks
 alerts:
@@ -30,7 +30,7 @@ related-articles:
     link: https://tools.ietf.org/html/rfc5246
 ---
 
-## <img src="/static_files/common/implementation.png " style="width:100px;height:100px;" /> TLS 1.2 Implementation
+## <img src="/img/common/implementation.png " style="width:100px;height:100px;" /> TLS 1.2 Implementation
 
 ### **Concept**
 DO NOT roll your own Crypto! Use standard services and libraries.
@@ -134,7 +134,7 @@ HTTP Client: [http://www.de-brauwer.be/wiki/wikka.php?wakka=PyOpenSSLClient](htt
 Validating a Certificate: [http://blog.san-ss.com.ar/2012/05/validating-ssl-certificate-in-python.html](http://blog.san-ss.com.ar/2012/05/validating-ssl-certificate-in-python.html)
 <br /><br />
 
-## <img src="/static_files/common/patch.png " style="width:100px;height:100px;" /> Upgrade/Patch Management
+## <img src="/img/common/patch.png " style="width:100px;height:100px;" /> Upgrade/Patch Management
 
 ### **Concept**
 <span class="red">Please be careful while upgrading your crypto library. Do not simply upgrade the package without thinking about the implications it might have on existing features of your application or operating system.</span>
