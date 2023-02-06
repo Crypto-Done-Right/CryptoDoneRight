@@ -58,3 +58,10 @@ It makes sense to use the most-used tools, right?  We integrate the most common 
 We know content must be organized logically and flexibly so you can get what you need fast.  We have a multi-tiered structured so you can do just that - find exactly what you need, just when you need it.  We have also defined three personas: Software Developer, IT Professional, and Manager because we know each role has different needs when it comes to security.  
 
 Have an idea for improvement?  We would love to hear it!  Go  [here](https://github.com/jhu-information-security-institute/CryptoDoneRight/issues/new?assignees=&labels=&template=issue_template.md&title=) then type in a `Title`, fill out the rest of the form, then click the `Submit new issue` button.
+
+
+### About CDR
+Crypto Done Right is a non-profit organization. All donations are tax deductible up to the maximum allowed by law.
+
+Our mailing address is: 10900 Research Blvd STE 160C 205, Austin, TX 78759
+
