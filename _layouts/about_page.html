@@ -25,11 +25,11 @@ layout: default_about
   <div id="fh5co-about" style="padding-bottom: 0">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-          <h3>People</h3>
+        <div class="col-lg-10 col-lg-offset-1 text-center heading-section animate-box">
+          <h3>Board of Directors</h3>
 					<div class="row">
-						{% for person in page.people %}
-						<div class="col-md-3 people-container">
+						{% for person in page.directors %}
+						<div class="col-lg-3 col-lg-offset-specific people-container">
 							<img src="/img/people/{{ person.photo }}"><br>
 							<h4>{{ person.name }}</h4>
 							<h5 style="font-weight: bold">{{ person.title }}</h5>
@@ -37,6 +37,19 @@ layout: default_about
 						</div>
 						{% endfor %}
 					</div>
+          </div>
+          <div class="col-md-10 col-md-offset-specific text-center heading-section animate-box">
+            <h3>Editorial Board</h3>
+            <div class="row">
+              {% for person in page.editors %}
+              <div class="col-md-3 people-container">
+                <img src="/img/people/{{ person.photo }}"><br>
+                <h4>{{ person.name }}</h4>
+                <h5 style="font-weight: bold">{{ person.title }}</h5>
+                <h5 style="color: #66D37E">{{ person.affiliation }}</h5>
+              </div>
+              {% endfor %}
+            </div>
         </div>
       </div>
     </div>

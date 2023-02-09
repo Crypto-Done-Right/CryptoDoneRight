@@ -2,23 +2,21 @@
 layout: about_page
 title: About
 permalink: /about.html
-people:
-- name: Ellie Daw
-  title: Research Scientist
-  affiliation: Crimson Vista
-  photo: ellie.jpg
+directors:
 - name: Dr. Seth Nielson
   title: Chief Scientist and Founder
   affiliation: Crimson Vista
   photo: seth.jpg
-- name: Dr. Joe Carrigan
-  title: Professor
-  affiliation: Johns Hopkins University
-  photo: joe.jpg
 - name: Debra Baker
   title: Director of Trust & Assurance
   affiliation: 38North Security
   photo: debra.jpg
+- name: Denny Mansilla
+  title:
+  affiliation:
+  photo: placeholder.jpg
+
+editors:
 - name: Scott Fluhrer
   title: Principal Engineer
   affiliation: Cisco
@@ -27,6 +25,15 @@ people:
   title:
   affiliation: Entrust Datacard
   photo: mike.jpg
+- name: Lisa Rodgers
+  title: 
+  affiliation: 
+  photo: placeholder.jpg
+- name: Zaid Khaishagi
+  title: Cybersecurity Engineer
+  affiliation: Crimson Vista
+  photo: zaid.jpg
+
 ---
 
 ###  Vision
