@@ -60,8 +60,8 @@ This is primarily for possible legacy device support. Ensure that this is done f
       return 0;
     }
   ```
-OpenSSL crypto library: [https://www.openssl.org/docs/manmaster/man1/sha1.html](https://www.openssl.org/docs/manmaster/man1/sha1.html)\\
-Man page: [https://www.openssl.org/docs/manmaster/crypto/sha.html](https://www.openssl.org/docs/manmaster/crypto/sha.html)<br /><br />
+OpenSSL crypto library: [https://www.openssl.org/docs/manmaster/man3/SHA1.html](https://www.openssl.org/docs/manmaster/man3/SHA1.html)\\
+Man page: [https://www.openssl.org/docs/man1.0.2/man3/sha.html](https://www.openssl.org/docs/man1.0.2/man3/sha.html)<br /><br />
 CryptoPP is a great C++ library for cryptographic functions. It has a method for calculating a SHA1 digest. See examples of the hashing functions [here](http://www.cryptopp.com/wiki/Hash_Functions).<br /><br />
 Libcrypt: [http://www.gnupg.org/documentation/manuals/gcrypt/Available-hash-algorithms.html#Available-hash-algorithms](http://www.gnupg.org/documentation/manuals/gcrypt/Available-hash-algorithms.html#Available-hash-algorithms)<br /><br />
 Another opensource library - Boost: [http://www.boost.org/doc/libs/1_46_0/libs/uuid/index.html](http://www.boost.org/doc/libs/1_46_0/libs/uuid/index.html)

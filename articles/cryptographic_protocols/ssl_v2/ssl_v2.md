@@ -8,7 +8,6 @@ alerts:
   - id: 1
     type: danger
     description: Warning! This technology is obsolete!
-    link: articles/cryptographic_protocols/SSL_2.0_INTRO
 further-reading:
   - name: Analysis of SSL
     link: https://www.schneier.com/academic/paperfiles/paper-ssl.pdf

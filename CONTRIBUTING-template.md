@@ -245,7 +245,7 @@ Once merged, Pull Requests preserve a record of the historical changes to your c
 
 ### Misc
 GitHub Resource on Pull Request:
-> Working on your first Pull Request? You can learn how from this *free* series, [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github).
+> Working on your first Pull Request? You can learn how from this *free* series, [How to Contribute to an Open Source Project on GitHub](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github).
 
 GitHub Resource on GitHub Flow:
 > Want to refresh on your understanding of the GitHub flow? You can find out more from the official guidance on [Understanding the GitHub Flow](https://guides.github.com/introduction/flow/).

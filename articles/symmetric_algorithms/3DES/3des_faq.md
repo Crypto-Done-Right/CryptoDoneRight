@@ -54,7 +54,7 @@ upper-link: /articles/symmetric_algorithms/3des/3des.html
   <br />
   Click <a href="https://techdifferences.com/difference-between-des-and-aes.html">here</a> for understanding some of the high level differences between DES and AES:
   <br />
-  For further reading: <a href="http://www.sersc.org/journals/IJSIA/vol9_no7_2015/21.pdf"> http://www.sersc.org/journals/IJSIA/vol9_no7_2015/21.pdf </a>
+  For further reading: <a href="https://www.researchgate.net/profile/Noura-Aleisa/publication/283178410_A_comparison_of_the_3DES_and_AES_encryption_standards/links/56d365a408ae059e37612702/A-comparison-of-the-3DES-and-AES-encryption-standards.pdf"> A comparison of the 3DES and AES encryption standards </a>
   <br /><br />
   <strong> How much overhead does it introduce in software and hardware? </strong>
   3DES is very slow especially in software implementations because DES was designed for performance in hardware

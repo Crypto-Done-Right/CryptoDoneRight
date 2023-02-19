@@ -16,6 +16,7 @@ alerts:
 further-reading:
 
 related-articles:
+has_faq: yes
 
 warnings:
   - name: Never Use ECB.

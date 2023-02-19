@@ -18,9 +18,9 @@ upper-link: /articles/cryptographic_protocols/tls_1_2/tls_1_2.html
 			</li></a>
 			<a href="#complianttlsv1.2"><li>What do I need to do to ensure that my site is compliant?</li></a>
 			<a href="#tlsv1.2browser"><li>What browsers/versions will provide the option for TLS 1.2?</li></a>
-			<a href="librariestlsv1.2#"><li>Whare are some popular libraries to implement TLSv1.2?</li></a>
-			<a href="performancetlsv1.2#"><li>Why TLSv1.2 when TLSv1.3 is already out?</li></a>
-			<a href="recommendedciphers#"><li>What are the recommended ciphers for use with TLSv1.2?</li></a>
+			<a href="#librariestlsv1.2"><li>Whare are some popular libraries to implement TLSv1.2?</li></a>
+			<a href="#performancetlsv1.2"><li>Why TLSv1.2 when TLSv1.3 is already out?</li></a>
+			<a href="#recommendedciphers"><li>What are the recommended ciphers for use with TLSv1.2?</li></a>
 		</ul>
   </blockquote><br /><br />
 	<p id="whattls?">
@@ -85,12 +85,14 @@ upper-link: /articles/cryptographic_protocols/tls_1_2/tls_1_2.html
 	</p>
 	<p id="performancetlsv1.2">
 		<li><strong>How much performance overhead does TLSv1.2 have?</strong><br >
-		According to IETF document <a href="https://tools.ietf.org/id/draft-mattsson-uta-tls-overhead-01.html#rfc.section.4">Overview and Analysis of Overhead Caused by TLS</a>, For everything but very short connections, TLS is not inducing any major traffic overhead (nor CPU or memory overhead). Server people from Google Gmail has stated that “TLS accounts for less than 1% of the CPU load, less than 10 KB of memory per connection and less than 2% of network overhead”. Main impact of TLS is increased latency, this can by reduced by using session resumption, cache information closer to end users, or waiting for TLS 1.3.</li><br /><br />
+		According to IETF document <a href="https://datatracker.ietf.org/doc/html/draft-mattsson-uta-tls-overhead-01">Overview and Analysis of Overhead Caused by TLS</a>, For everything but very short connections, TLS is not inducing any major traffic overhead (nor CPU or memory overhead). Server people from Google Gmail has stated that “TLS accounts for less than 1% of the CPU load, less than 10 KB of memory per connection and less than 2% of network overhead”. Main impact of TLS is increased latency, this can by reduced by using session resumption, cache information closer to end users, or waiting for TLS 1.3.</li><br /><br />
 	</p>
-	<p id="certificatestlsv1.2">
+	<!-- <p id="certificatestlsv1.2">
 		<li><strong>What kind of certificates do I use with TLSv1.2?</strong><br />
 		Read the following document: <a href="tls_1_2_best_practices.html"> Best practices to deploy certificates </a></li><br /><br />
-	</p>
+	</p> 
+	THIS IS COMMENTED OUT BECAUSE tls_1_2_best-practices.html does not exist 
+	-->
 	<p id="popularcatlsv1.2">
 		<li><strong>Who are some of the most popular CAs available?</strong><br />
 		GoDaddy, Symantec, Digicert are some of the well known CAs around. You could also consider options like <a href="https://letsencrypt.org/">Let'sencrypt </a>which are free and well-trusted.</li><br /><br />

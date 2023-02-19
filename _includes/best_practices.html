@@ -32,8 +32,11 @@
       {% endfor %}
     {% endif %}
   </ol>
+  
+  {% if page.has_faq %}
   <p>
     For more details check <a href="{{ page.permalink | split:'/' | last | remove: '.html'}}_faq.html">the FAQ</a> for this algorithm.
   </p>
+  {% endif %}
   </div>
 </div>

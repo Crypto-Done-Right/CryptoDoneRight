@@ -8,7 +8,6 @@ alerts:
   - id: 1
     type: danger
     description: "Warning: This technology is obsolete!"
-    link: /articles/hashing_algorithms/sha1/sha1_broken
   - id: 2
     type: recommended
     description: "Migration plan: moving from SHA-1 to SHA-2."
