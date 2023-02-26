@@ -41,7 +41,7 @@ The general workflow for account registration and authentication in a hash-based
 * When the user attempts to login, the hash of the password they entered is checked against the hash of their real password (retrieved from the database).
 * If the hashes match, the user is granted access. If not, the user is told they entered invalid login credentials.
 
-Steps 3 and 4 repeat every time someone tries to login to their account. Refer to [Hashing page](example_index.html) for known Attacks on Hashes.
+Steps 3 and 4 repeat every time someone tries to login to their account. Refer to [Hashing page](../../concepts/hashing.html) for known Attacks on Hashes.
 <br /><br />
 
 ### **Basic Implementation of SHA-1**
