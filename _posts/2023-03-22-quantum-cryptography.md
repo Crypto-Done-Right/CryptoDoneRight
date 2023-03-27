@@ -5,7 +5,7 @@ categories: blog
 author: "Seth Nielson"
 type: blog
 img_tag: <img src="/img/quantum-cryptography.jpg" class="blog-photo">
-img: /img/quantum-cryptography.jpg
+# img: quantum-cryptography.jpg
 ---
 
 <hr />

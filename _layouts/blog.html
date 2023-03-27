@@ -11,8 +11,6 @@
     {% include header.html %}
 
     <section id="blog">
-      <div class="container">
-        <div class="row">
           <div class="text-center">
             <h2 class="section-heading"><strong>Crypto Done Right's Blog</strong></h2>
             <h3 class="section-subheading text-muted">
@@ -20,7 +18,6 @@
               <hr />
             </h3>
           </div>
-        </div>
         <div class="all-posts">
           {% for post in site.posts %}
           {% if post.type == "blog" %}
@@ -46,7 +43,6 @@
         <div class="col-md-3">
 
         </div>
-      </div>
     </section>
 
     {% include footer.html %}
@@ -110,12 +106,13 @@ p {
 .blog-row {
   box-sizing: content-box;
   /* width: 100%; */
-  /* position: relative; */
-  position: absolute;
+  position: relative;
+  /* position: absolute; */
   left: 15vw;
   height: fit-content;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 70vw;
+  display: inline-block;
 }
 
 .post-img {
