@@ -5,6 +5,7 @@ categories: blog
 author: "Debra Baker"
 type: blog
 img_tag: <img src="/img/lock-icon.ico" class="blog-photo">
+img: img/lock-icon.ico
 ---
 
 <hr />
