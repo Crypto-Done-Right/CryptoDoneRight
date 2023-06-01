@@ -8,8 +8,8 @@ directors:
   affiliation: Crimson Vista
   photo: seth.jpg
 - name: Debra Baker
-  title: Director of Trust & Assurance
-  affiliation: 38North Security
+  title: Owner & vCISO
+  affiliation: TrustedCISO
   photo: debra.jpg
 - name: Denny Mansilla
   title:
@@ -22,12 +22,12 @@ editors:
   affiliation: Cisco
   photo: scott.jpg
 - name: Mike Ounsworth
-  title:
-  affiliation: Entrust Datacard
+  title: Software Security Architect
+  affiliation: Entrust
   photo: mike.jpg
 - name: Lisa Rodgers
-  title: 
-  affiliation: 
+  title: Program Manager
+  affiliation: NetApp
   photo: placeholder.jpg
 - name: Zaid Khaishagi
   title: Cybersecurity Engineer
