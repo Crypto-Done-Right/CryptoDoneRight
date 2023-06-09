@@ -24,19 +24,17 @@
 
           <div class="full-post col-lg-12">
 
-          <div class="post-area col-md-4 col-md-offset-2">
+          <div class="post-area col-md-4 col-md-offset-4">
           </br>
-          </br> 
           </br>
-            <p class="post-title">{{ post.title }}</p>
-            <p class="post-date"><strong>{{post.author}}</strong>, {{ post.date | date: "%B %-d, %Y" }} </p>
 
-              &nbsp;&nbsp;&nbsp;&nbsp;<a href="{{  post.pdf  }}" download><button>Download</button>
-              </a>
+          <div class="post-img row">
+            {{ post.img_tag }}
           </div>
-
-          <div class="post-img col-sm-2">
-              {{ post.img_tag }}
+            <p class="post-date"><a href="{{ post.pdf }}" class="download-link" download><strong> {{ post.title }} </strong>, {{ post.author }}</a></p>
+<!-- 
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ post.pdf }}" download><button>Download</button>
+              </a> -->
           </div>
 
           </div>
@@ -54,6 +52,11 @@
     </body>
 
 <style>
+
+.download-link {
+  text-decoration: none;
+  color: black;
+}
 
 .blog-photo {
 
@@ -96,7 +99,7 @@ p {
 
   color:black;
   font-size: 20px;
-  text-align:left;
+  text-align:center;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 
 }
@@ -123,15 +126,11 @@ p {
 }
 
 .post-img {
-  box-sizing: content-box;
-  width: 15%;
-  height: 100%;
-  position: relative;
-  left: 0px;
-  /* border: 1px solid green; */
-  float: left;
-  /* padding: 2vw; */
-  padding-right: 2vw;
+  display: block;
+  width: 20%;
+  height: 20%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .reading-area {
