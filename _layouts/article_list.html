@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<!-- <link rel="stylesheet" href="css\style.css"> -->
+
+  {% include head.html %}
+
+
+    <body id="page-top" class="index">
+
+    {% include header.html %}
+
+    <section id="blog">
+          <div class="text-center">
+            <h2 class="section-heading"><strong>Reading Room</strong></h2>
+            <!-- <h3 class="section-subheading text-muted">
+              All the Latest Cryptography News <br />
+              <hr />
+            </h3> -->
+          </div>
+        <div class="all-posts col-lg-12">
+          {% for post in site.posts %}
+          {% if post.type == "reading" %}
+
+          <div class="full-post col-lg-12">
+
+          <div class="post-area col-md-4 col-md-offset-2">
+          </br>
+          </br> 
+          </br>
+            <p><a href="{{ post.url | prepend: site.baseurl }}" class="post-title">{{ post.title }}</a></p>
+            <p class="post-date"><strong>{{post.author}}</strong>, {{ post.date | date: "%B %-d, %Y" }} </p>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ post.url | prepend: site.baseurl }}"><button>Read more</button>
+              </a>
+          </div>
+
+          <div class="post-img col-sm-2">
+              {{ post.img_tag }}
+          </div>
+
+          </div>
+            
+          </div>
+          {% endif %}
+          {% endfor %}
+        </div>
+
+        </div>
+    </section>
+
+    {% include footer.html %}
+
+    </body>
+
+<style>
+
+.blog-photo {
+
+    /* object-fit: cover; */
+    position: relative;
+    left: 0px;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    /* display: inline-block; */
+
+}
+
+p {
+  margin: 10px;
+}
+
+.post-title {
+
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align:left;
+  
+  /* text-align: left; */
+
+}
+
+.post-content {
+
+  color:black;
+  font-size: 16px;
+  text-align:left;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.post-date {
+
+  color:black;
+  font-size: 20px;
+  text-align:left;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.post-area {
+  float:left;
+  /* width: 75%; */
+}
+
+.full-post {
+  border-bottom: 1px solid lightgreen;
+}
+
+.blog-row {
+  box-sizing: content-box;
+  /* width: 100%; */
+  position: relative;
+  /* position: absolute; */
+  left: 15vw;
+  height: fit-content;
+  /* overflow: hidden; */
+  width: 70vw;
+  display: inline-block;
+}
+
+.post-img {
+  box-sizing: content-box;
+  width: 15%;
+  height: 100%;
+  position: relative;
+  left: 0px;
+  /* border: 1px solid green; */
+  float: left;
+  /* padding: 2vw; */
+  padding-right: 2vw;
+}
+
+.reading-area {
+  border: 2px;
+}
+
+#footer {
+  background: #66D37E;
+  padding: 30px 0 30px;
+}
+
+#footer p {
+  color: white;
+  font-size: 14px;
+}
+#footer p a {
+  color: rgba(255, 255, 255, 0.5);
+}
+#footer p a:hover, #footer p a:active, #footer p a:focus {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 125px;
+}
+
+</style>
+
+
+</html>

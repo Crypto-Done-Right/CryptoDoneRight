@@ -33,6 +33,10 @@ editors:
   title: Cybersecurity Engineer
   affiliation: Crimson Vista
   photo: zaid.jpg
+- name: Debra Baker
+  title: Owner & vCISO
+  affiliation: TrustedCISO
+  photo: debra.jpg
 
 ---
 
