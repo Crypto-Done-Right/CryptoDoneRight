@@ -820,7 +820,7 @@ figure {
 }
 
 #fh5co-feature-product {
-  padding: 7em 0;
+  padding: 4em 0;
   padding-bottom: 0;
 }
 
@@ -1094,8 +1094,8 @@ figure {
   padding: 40px 0 40px;
   left:0;
   bottom:0;
-  border: 2px solid #000;
-  border-width: 2px 0px 0px 0px;
+  /* border: 2px solid #000;
+  border-width: 2px 0px 0px 0px; */
   padding:2vw;
 
 }
@@ -1103,6 +1103,7 @@ figure {
 #footer p {
   color: white;
   font-size: 14px;
+  margin: 2px;
 }
 #footer p a {
   color: rgba(255, 255, 255, 0.5);

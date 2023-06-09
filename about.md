@@ -2,31 +2,42 @@
 layout: about_page
 title: About
 permalink: /about.html
-people:
-- name: Ellie Daw
-  title: Research Scientist
-  affiliation: Crimson Vista
-  photo: ellie.jpg
+directors:
 - name: Dr. Seth Nielson
   title: Chief Scientist and Founder
   affiliation: Crimson Vista
   photo: seth.jpg
-- name: Dr. Joe Carrigan
-  title: Professor
-  affiliation: Johns Hopkins University
-  photo: joe.jpg
 - name: Debra Baker
-  title: Director of Trust & Assurance
-  affiliation: 38North Security
+  title: Owner & vCISO
+  affiliation: TrustedCISO
   photo: debra.jpg
+- name: Denny Mansilla
+  title:
+  affiliation:
+  photo: placeholder.jpg
+
+editors:
 - name: Scott Fluhrer
   title: Principal Engineer
   affiliation: Cisco
   photo: scott.jpg
 - name: Mike Ounsworth
-  title:
-  affiliation: Entrust Datacard
+  title: Software Security Architect
+  affiliation: Entrust
   photo: mike.jpg
+- name: Lisa Rodgers
+  title: Program Manager
+  affiliation: NetApp
+  photo: placeholder.jpg
+- name: Zaid Khaishagi
+  title: Cybersecurity Engineer
+  affiliation: Crimson Vista
+  photo: zaid.jpg
+- name: Debra Baker
+  title: Owner & vCISO
+  affiliation: TrustedCISO
+  photo: debra.jpg
+
 ---
 
 ###  Vision
@@ -58,3 +69,10 @@ It makes sense to use the most-used tools, right?  We integrate the most common 
 We know content must be organized logically and flexibly so you can get what you need fast.  We have a multi-tiered structured so you can do just that - find exactly what you need, just when you need it.  We have also defined three personas: Software Developer, IT Professional, and Manager because we know each role has different needs when it comes to security.  
 
 Have an idea for improvement?  We would love to hear it!  Go  [here](https://github.com/jhu-information-security-institute/CryptoDoneRight/issues/new?assignees=&labels=&template=issue_template.md&title=) then type in a `Title`, fill out the rest of the form, then click the `Submit new issue` button.
+
+
+### About CDR
+Crypto Done Right is a non-profit organization. All donations are tax deductible up to the maximum allowed by law.
+
+Our mailing address is: 10900 Research Blvd STE 160C 205, Austin, TX 78759
+

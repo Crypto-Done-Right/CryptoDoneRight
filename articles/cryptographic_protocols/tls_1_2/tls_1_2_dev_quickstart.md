@@ -130,7 +130,6 @@ Almost everything that you would want with pyOpenSSL is on their website:\\
 
 Here are some examples of opensource code that utilizes pyOpenSSL:\\
 HTTP Server supporting SSL: [http://code.activestate.com/recipes/442473-simple-http-server-supporting-ssl-secure-communica/](http://code.activestate.com/recipes/442473-simple-http-server-supporting-ssl-secure-communica/)\\
-HTTP Client: [http://www.de-brauwer.be/wiki/wikka.php?wakka=PyOpenSSLClient](http://www.de-brauwer.be/wiki/wikka.php?wakka=PyOpenSSLClient)\\
 Validating a Certificate: [http://blog.san-ss.com.ar/2012/05/validating-ssl-certificate-in-python.html](http://blog.san-ss.com.ar/2012/05/validating-ssl-certificate-in-python.html)
 <br /><br />
 

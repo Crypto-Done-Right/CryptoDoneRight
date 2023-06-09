@@ -1818,8 +1818,8 @@ abbr[data-original-title] {
 }
 
 blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
+  padding: 2px 2px;
+  margin: 0 0 2px;
   font-size: 17.5px;
   border-left: 5px solid #eeeeee;
 }
@@ -1865,6 +1865,10 @@ blockquote.pull-right footer:after,
 blockquote.pull-right small:after,
 blockquote.pull-right .small:after {
   content: '\00A0 \2014';
+}
+
+blockquote p {
+  margin: 0px;
 }
 
 address {
@@ -2617,6 +2621,10 @@ pre code {
   .col-md-offset-12 {
     margin-left: 100%;
   }
+
+  .col-md-offset-specific {
+    margin-left: 10%;
+  }
 }
 @media (min-width: 1200px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
@@ -2783,6 +2791,10 @@ pre code {
     margin-left: 8.33333%;
   }
 
+  .col-lg-offset-3-2 {
+    margin-left: 14%;
+  }
+
   .col-lg-offset-2 {
     margin-left: 16.66667%;
   }
@@ -2825,6 +2837,10 @@ pre code {
 
   .col-lg-offset-12 {
     margin-left: 100%;
+  }
+
+  .col-lg-offset-specific {
+    margin-left: 7%;
   }
 }
 table {

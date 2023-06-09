@@ -8,7 +8,7 @@ alerts:
   - id: 1
     type: danger
     description: This is the NOT the recommended standard.
-    link: /articles/cryptographic_protocols/AES.html
+    link: /articles/symmetric_algorithms/aes/aes.html
   - id: 2
     type: danger
     description: There are serious security implications if not configured properly!
@@ -20,7 +20,7 @@ alerts:
 further-reading:
 
 related-articles:
-
+has_faq: yes
 attacks:
   - name: Meet in the Middle Attack
     description: ":This particular attack can occur with specific settings in which DES could operate (keying option 1)."

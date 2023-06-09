@@ -167,7 +167,3 @@ HTTP Server supporting SSL: <a href="http://code.activestate.com/recipes/442473-
 HTTP Client: <a href="http://www.de-brauwer.be/wiki/wikka.php?wakka=PyOpenSSLClient">http://www.de-brauwer.be/wiki/wikka.php?wakka=PyOpenSSLClient </a><br />
 Validating a Certificate: <a href="http://blog.san-ss.com.ar/2012/05/validating-ssl-certificate-in-python.html"> http://blog.san-ss.com.ar/2012/05/validating-ssl-certificate-in-python.html </a><br />
 </p><br /><br />
-
-<blockquote>
-For more information on which versions of programming languages support secure version of TLS, refer <h3><a href="https://www.docusign.com/blog/dsdev-updating-applications-end-tls-1-0/">here.</a></h3>
-</blockquote>

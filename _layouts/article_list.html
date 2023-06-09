@@ -12,35 +12,52 @@
 
     <section id="blog">
           <div class="text-center">
-            <h2 class="section-heading"><strong>Crypto Done Right's Blog</strong></h2>
-            <h3 class="section-subheading text-muted">
+            <h2 class="section-heading"><strong>Reading Room</strong></h2>
+            <!-- <h3 class="section-subheading text-muted">
               All the Latest Cryptography News <br />
               <hr />
-            </h3>
+            </h3> -->
           </div>
-        <div class="all-posts">
+        <div class="all-posts col-lg-12">
+          <table>
+            <tr>
+              <th>Date Published</th>
+              <th>Title</th>
+              <th>Author</th>
+            </tr>
           {% for post in site.posts %}
-          {% if post.type == "blog" %}
-          <div class="row blog-row">
-            <div class="post-img">
-              {{ post.img_tag }}
-            </div>
-            <div class="post-area">
-              <p><a href="{{ post.url | prepend: site.baseurl }}" class="post-title">{{ post.title }}</a></p>
-              <p class="post-date"><strong>{{post.author}}</strong>, {{ post.date | date: "%B %-d, %Y" }} </p>
-              <p class="post-content">
-                {{ post.content | strip_html | truncatewords: 50 }}
-                <a href="{{ post.url | prepend: site.baseurl }}">
-                  <button>Read more</button>
-                  </a>
-              </p>
-            </div>
+          {% if post.type == "reading" %}
+
+          <tr>
+            <td>{{ post.date | date: "%B %-d, %Y" }}</td>
+            <td><a href="{{ post.pdf }}" class="download-link" download>{{ post.title }}</a></td>
+            <td>{{ post.author }}</td>
+          </tr>
+
+          <!-- <div class="full-post col-lg-12">
+
+          <div class="post-area col-md-4 col-md-offset-4">
+          </br>
+          </br>
+
+          <div class="post-img row">
+            {{ post.img_tag }}
           </div>
+            <p class="post-date"><a href="{{ post.pdf }}" class="download-link" download><strong> {{ post.title }} </strong>, {{ post.author }}</a></p>
+
+          </div>
+
+          </div>
+            
+          </div> -->
+
+
+
+
           {% endif %}
           {% endfor %}
+        </table>
         </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-3">
 
         </div>
     </section>
@@ -50,6 +67,23 @@
     </body>
 
 <style>
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.download-link {
+  text-decoration: none;
+  color: black;
+}
 
 .blog-photo {
 
@@ -92,15 +126,18 @@ p {
 
   color:black;
   font-size: 20px;
-  text-align:left;
+  text-align:center;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
 .post-area {
   float:left;
-  width: 75%;
-  /* border: 1px solid blue; */
+  /* width: 75%; */
+}
+
+.full-post {
+  border-bottom: 1px solid lightgreen;
 }
 
 .blog-row {
@@ -116,15 +153,15 @@ p {
 }
 
 .post-img {
-  box-sizing: content-box;
-  width: 15%;
-  height: 100%;
-  position: relative;
-  left: 0px;
-  /* border: 1px solid green; */
-  float: left;
-  /* padding: 2vw; */
-  padding-right: 2vw;
+  display: block;
+  width: 20%;
+  height: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reading-area {
+  border: 2px;
 }
 
 #footer {

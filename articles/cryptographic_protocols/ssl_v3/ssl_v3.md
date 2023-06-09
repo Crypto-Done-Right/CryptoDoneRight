@@ -8,7 +8,6 @@ alerts:
   - id: 1
     type: danger
     description: "Warning! This technology is obsolete!"
-    link: articles/cryptographic_protocols/SSL_3.0_INTRO
 further-reading:
   - name: Analysis of SSL
     link: "https://www.schneier.com/academic/paperfiles/paper-ssl.pdf"
@@ -26,13 +25,10 @@ related-articles:
 attacks:
   - name: POODLE
     description: ": The attack that killed off SSLv3.0. POODLE allows an attacker to force a SSLv3 connection and use weak configuration to break security."
-    link: "https://cryptodoneright.org/articles/cryptographic_protocols/ssl-3-vuln.html#poodle"
   - name: BEAST
     description: ": A vulnerability that can be exploited using browsers (HTTPS). A client side attack whose possible impacts include session hijacking."
-    link: "https://cryptodoneright.org/articles/cryptographic_protocols/ssl-3-vuln.html#beast"
   - name: Logjam
     description: "An easy to exploit vulnerability if weak configuration is used. This vulnerability affects all versions of SSL/TLS."
-    link": "https://cryptodoneright.org/articles/cryptographic_protocols/ssl-3-vuln.html#logjam"
   - name: ROBOT
     description: "A weakness in the RSA encryption standard known as PKCS#1v1.5 that can ultimately allow an attacker to learn a secured website’s private key in a relatively short amount of time."
     link: "https://robotattack.org/"

@@ -15,7 +15,7 @@ alerts:
   - id: 2
     type: danger
     description: This is the NOT the recommended standard.
-    link: /articles/cryptographic_protocols/AES.html
+    link: /articles/symmetric_algorithms/aes/aes.html
   - id: 3
     type: danger
     description: There are serious security implications if not configured properly!
