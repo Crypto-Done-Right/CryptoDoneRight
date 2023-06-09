@@ -28,10 +28,10 @@
           </br>
           </br> 
           </br>
-            <p><a href="{{ post.url | prepend: site.baseurl }}" class="post-title">{{ post.title }}</a></p>
+            <p class="post-title">{{ post.title }}</p>
             <p class="post-date"><strong>{{post.author}}</strong>, {{ post.date | date: "%B %-d, %Y" }} </p>
 
-              &nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ post.url | prepend: site.baseurl }}"><button>Read more</button>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="{{  post.pdf  }}" download><button>Download</button>
               </a>
           </div>
 
