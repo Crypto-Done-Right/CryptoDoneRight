@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: blog_post
 title: "The Future of Cryptography in the Age of Quantum Computing"
 categories: blog
@@ -293,4 +293,4 @@ still have questions, please reach out. We will be happy to answer them!
 [^5]: Named for Peter Shor.
 
 [^6]: Named for Lov Grover.
-
+ -->
