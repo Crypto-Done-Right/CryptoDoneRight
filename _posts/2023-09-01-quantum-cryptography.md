@@ -37,7 +37,7 @@ Looking ahead, when quantum computing matures it will radically disrupt current 
 
 Modern cryptography fulfills many different functions. The most common is _encryption_, which is used to keep data confidential. But there are many other operations that are equally as important. One such operation is securely creating temporary one-time keys needed when two computers talk to each other[^1]. Another critical cryptography operation is a process that allows a website to verify its identity.
 
-These different operations function together to make internet security work. For example, when you connect to your online banking website, your browserand the bank's webserver perform a special secure exchange of data, called a handshake to set up secure communications.
+These different operations function together to make internet security work. For example, when you connect to your online banking website, your browser and the bank's webserver perform a special secure exchange of data, called a handshake to set up secure communications.
 
 The purpose of the handshake is to enable the exchange of encrypted and authenticated data back and forth between your browser and your bank's webserver. To create this secure connection your browser and the bank webserver share a one-time key. The browser confirms it is sharing the one-time key with the real bank and not an imposter by validating the bank's security certificate.
 
@@ -45,7 +45,7 @@ Each of these steps is performed by a different set of cryptographic algorithms,
 
 - The encrypted/authenticated messages are created using symmetric algorithms[^2]. Systematic algorithms use the same key for both your browser and the bank's webserver.
 
-- The one-time key is generated using an asymmetric algorithm[^3]. Asymmetric algorithms require both your browser and the bank's webserver to create public data and private data. They then exchange their respective public data. Your browser's private data combined withthe bank's webserver public data produces the same output as the bank's private data combined with your browser's public data. Because both computers have generated the same output, that output can be used to generate the same one-time key on both sides.
+- The one-time key is generated using an asymmetric algorithm[^3]. Asymmetric algorithms require both your browser and the bank's webserver to create public data and private data. They then exchange their respective public data. Your browser's private data combined with the bank's webserver public data produces the same output as the bank's private data combined with your browser's public data. Because both computers have generated the same output, that output can be used to generate the same one-time key on both sides.
 
 - A signed certificate is a piece of publicly available digital data that verifies web site identities. A certificate is verified by another asymmetric process. This certificate is used to verify that the server that is answering is genuine. The bank's private key is used to generate a digital signature for the bank's certificate. Your browser uses a known public key associated with the bank's website to verify that the certificate is valid for your bank.
 
@@ -90,7 +90,7 @@ Security experts and cryptographers are already working on enhanced algorithms. 
 
 Passwords are another constant problem which is all the more problematic because many of our cryptographic keys are derived from or protected by passwords in one form or another. Doubling the size of symmetric keys will not solve the password problem. A post-quantum computing bad password will be just as insecure as a bad password is now.
 
-Despite advanced cryptographic measures, social engineering will remain a significant threat. , so if our systems are being compromised by phishing emails now, they will continue to be compromised in the post-quantum computing world. Quantum-resistant certificates and signatureswon't stop a user from clicking on unverified links in an email.
+Despite advanced cryptographic measures, social engineering will remain a significant threat. , so if our systems are being compromised by phishing emails now, they will continue to be compromised in the post-quantum computing world. Quantum-resistant certificates and signatures won't stop a user from clicking on unverified links in an email.
 
 The point we are making here is that most users don't need to worry about quantum computers. It's more important to figure out improved systems security right now. Quantum computing isn't going to matter for many more years. By the time it does, if you have developed good security deployments and operations, you will be able to make a smooth switchover. Much like the Y2K bug, you'll be more aware of the news reports around quantum computers than you will experience any significant problems.
 
