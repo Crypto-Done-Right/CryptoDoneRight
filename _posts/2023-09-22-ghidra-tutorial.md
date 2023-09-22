@@ -4,7 +4,7 @@ title: "Ghidra Tutorial: Introduction"
 categories: blog
 author: "Zaid Khashagi"
 type: blog
-img_tag: <img src="/img/aes-128.jpg" class="blog-photo">
+img_tag: <img src="/img/ghidra.png" class="blog-photo">
 # img: img/lock-icon.ico
 ---
 
