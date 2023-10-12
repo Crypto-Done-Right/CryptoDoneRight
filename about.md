@@ -12,9 +12,9 @@ directors:
   affiliation: TrustedCISO
   photo: debra.jpg
 - name: Denny Mansilla
-  title:
-  affiliation:
-  photo: placeholder.jpg
+  title: Owner and Founder
+  affiliation: 3EOTech
+  photo: denny.png
 
 editors:
 - name: Scott Fluhrer
