@@ -38,7 +38,11 @@ tr:nth-child(even) {
   </tr>
   {% for member in site.data.members %}
   <tr>
-    <td> <strong>{{member.Algorithm}}</strong> </td>
+    {% if member.url %}
+      <td> <a href="{{member.url}}"> <strong>{{member.Algorithm}}</strong></a> </td>
+    {% else %}
+      <td> <strong>{{member.Algorithm}}</strong> </td>
+    {% endif %}
     <td> {{member.recommended}}</td>
     <td> {{member.acceptable}} </td>
     <td> {{member.avoid}}</td>
